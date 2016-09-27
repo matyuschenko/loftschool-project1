@@ -1,0 +1,33 @@
+include ../common/_mixins
+
+include ../common/header
+
+.portfolio
+    button.arrow-button.arrow-button_direction_left
+    .screenshots-wrapper
+        img.screenshot(src="" alt="Скриншот с примером работы")
+        img.screenshot(src="" alt="Другой скриншот с примером работы")
+    .slider
+    .work-details
+        h2.h2 Сайт школы онлайн-образования
+        p.portfolio__skills-used HTML, CSS, Javascript
+        button.button-link.
+            Посмотреть сайт
+            .button-link__icon
+    button.arrow-button.arrow-button_direction_right
+
+.what-about
+    h1.h1 Что обо мне говорят
+    +reference("Этот парень проходил обучение разработке не где-то, а в Loftschool", "", "Ковальчук Дмитрий", "основатель Loftschool")
+    +reference("Это код выдержит любые испытания", "", "Зар Захаров", "преподаватель")
+    form.contact-me
+        h2.h2 Связаться со мной
+        input(class="contact-me__name", value="Имя")
+        input(class="contact-me__email", value="Почта")
+        input(class="contact-me__message", value="Ваше сообщение")
+        ul.buttons-list
+            li.buttons-list__item Отправить
+            li.buttons-list__item Очистить
+    button.arrow-button.arrow-button_direction_top
+
+include ../common/footer

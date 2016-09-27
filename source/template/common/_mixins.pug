@@ -1,0 +1,9 @@
+mixin reference(text, src, name, title)
+    .reference
+        .quotemark
+        p.reference__text= text
+        .referencer
+            .photo-wrapper
+                img(src=src, alt="Фото, от кого отзыв", class="referencer__photo")
+            p.referencer__name= name
+            p.referencer__title= title
