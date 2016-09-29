@@ -1,74 +1,71 @@
-include ../common/_mixins
+extends ../page_layout
 
-include ../common/header
-
-.about-me
-    h1.h1 Обо мне
-    .cv
-        .cv__photo-wrapper
-            img.cv__photo(src="" alt="Фотография Максима Матющенко")
-        h2.h2 Кто я
-        p.cv__text.
-            Я являюсь данным разработчиком по имени Матющенко Максим.
-    .skills
-        h2.h2 Чем я могу быть вам полезен
-        p.skills__description Больше всего меня привлекает frontend и backend.
-        .skills__charts
-            .skills__row
-                h3.h3 Frontend
-                ul.skills__list
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name HTML 5
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name CSS 3
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name JavaScript & jQuery
-            .skills__row
-                h3.h3 Backend
-                ul.skills__list
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name PHP
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name mySQL
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name NodeJS & npm
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name Mongo.db
-            .skills__row
-                h3.h3 Workflow
-                ul.skills__list
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name Git
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name gulp
-                    li.skills__item
-                        .skills__chart
-                        span.skills__name Bower
-    .map-wrapper
-        .map
-        .contacts
-            h2.h2 Контакты
-            ul.contacts-list
-                li.contacts-list__item
-                    span.contacts-list__icon_name_skype
-                    span.contacts-list__text maxim-mat@yandex.ru
-                li.contacts-list__item
-                    span.contacts-list__icon_name_email
-                    span.contacts-list__text maxim-mat@yandex.ru
-                li.contacts-list__item
-                    span.contacts-list__icon_name_phone
-                    span.contacts-list__text +7 903 228 8595
-                li.contacts-list__item
-                    span.contacts-list__icon_name_address
-                    span.contacts-list__text Москва
-
-include ../common/footer
+block content
+    .about-me
+        h1.h1 Обо мне
+        .cv
+            .cv__photo-wrapper
+                img.cv__photo(src="" alt="Фотография Максима Матющенко")
+            h2.h2 Кто я
+            p.cv__text.
+                Я являюсь данным разработчиком по имени Матющенко Максим.
+        .skills
+            h2.h2 Чем я могу быть вам полезен
+            p.skills__description Больше всего меня привлекает frontend и backend.
+            .skills__charts
+                .skills__row
+                    h3.h3 Frontend
+                    ul.skills__list
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name HTML 5
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name CSS 3
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name JavaScript & jQuery
+                .skills__row
+                    h3.h3 Backend
+                    ul.skills__list
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name PHP
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name mySQL
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name NodeJS & npm
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name Mongo.db
+                .skills__row
+                    h3.h3 Workflow
+                    ul.skills__list
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name Git
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name gulp
+                        li.skills__item
+                            .skills__chart
+                            span.skills__name Bower
+        .map-wrapper
+            .map
+            .contacts
+                h2.h2 Контакты
+                ul.contacts-list
+                    li.contacts-list__item
+                        span.contacts-list__icon_name_skype
+                        span.contacts-list__text maxim-mat@yandex.ru
+                    li.contacts-list__item
+                        span.contacts-list__icon_name_email
+                        span.contacts-list__text maxim-mat@yandex.ru
+                    li.contacts-list__item
+                        span.contacts-list__icon_name_phone
+                        span.contacts-list__text +7 903 228 8595
+                    li.contacts-list__item
+                        span.contacts-list__icon_name_address
+                        span.contacts-list__text Москва

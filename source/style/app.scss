@@ -1,5 +1,41 @@
+@import 'common/variables';
+@import 'common/buttons';
+@import 'common/headers';
+@import 'common/header';
+@import 'common/social-buttons';
+@import 'common/avatar-name';
+@import 'common/footer';
+
+@import 'works/portfolio';
+@import 'works/reference';
+@import 'works/what-about';
+@import 'works/contact-me';
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
 }
 
-@import 'common/greating';
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+//* {
+//  box-sizing: border-box;
+//}

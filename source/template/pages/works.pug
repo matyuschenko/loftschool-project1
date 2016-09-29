@@ -1,33 +1,41 @@
-include ../common/_mixins
+extends ../page_layout
 
-include ../common/header
+block content
 
-.portfolio
-    button.arrow-button.arrow-button_direction_left
-    .screenshots-wrapper
-        img.screenshot(src="" alt="Скриншот с примером работы")
-        img.screenshot(src="" alt="Другой скриншот с примером работы")
-    .slider
-    .work-details
-        h2.h2 Сайт школы онлайн-образования
-        p.portfolio__skills-used HTML, CSS, Javascript
-        button.button-link.
-            Посмотреть сайт
-            .button-link__icon
-    button.arrow-button.arrow-button_direction_right
+    .portfolio
+        h1.h1 Мои работы
+        .portfolio-arrow-button-wrapper
+            .arrow-button.arrow-button_direction_left
+        .screenshots-wrapper
+            img.screenshot(src="assets/img/work-1.png" alt="Скриншот с примером работы")
+        .slider
+            .slider__circle.slider__circle_active
+            .slider__circle
+            .slider__circle
+            .slider__circle
+        .work-details
+            h2.h2.h2_align_left Сайт школы онлайн образования
+            p.portfolio__skills-used HTML, CSS, Javascript
+            button.button-link
+                .button-link__icon
+                span.button-link__text Посмотреть сайт
+        .portfolio-arrow-button-wrapper
+            .arrow-button.arrow-button_direction_right
 
-.what-about
-    h1.h1 Что обо мне говорят
-    +reference("Этот парень проходил обучение разработке не где-то, а в Loftschool", "", "Ковальчук Дмитрий", "основатель Loftschool")
-    +reference("Это код выдержит любые испытания", "", "Зар Захаров", "преподаватель")
-    form.contact-me
-        h2.h2 Связаться со мной
-        input(class="contact-me__name", value="Имя")
-        input(class="contact-me__email", value="Почта")
-        input(class="contact-me__message", value="Ваше сообщение")
-        ul.buttons-list
-            li.buttons-list__item Отправить
-            li.buttons-list__item Очистить
-    button.arrow-button.arrow-button_direction_top
+    .what-about
+        h1.h1 Что обо мне говорят
+        .reference-wrapper
+            +reference("Этот парень проходил обучение разработке не где-то, а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!", "assets/img/kovalchuk.png", "Ковальчук Дмитрий", "основатель Loftschool")
+            +reference("Это код выдержит любые испытания. Только, пожалуйста, не загружайте сайт на слишком старых браузерах!", "assets/img/zakharov.png", "Зар Захаров", "преподаватель")
 
-include ../common/footer
+    .contact-me
+        form.contact-me-form
+            h2.h2 Связаться со мной
+            input(class="contact-me__input contact-me__input_type_name", value="Имя")
+            input(class="contact-me__input contact-me__input_type_email", value="Почта")
+            input(class="contact-me__input contact-me__input_type_message", value="Ваше сообщение")
+            ul.buttons-list
+                li.buttons-list__item Отправить
+                li.buttons-list__item Очистить
+        .contact-me-arrow-button-wrapper
+            .arrow-button.arrow-button_direction_top

@@ -1,0 +1,44 @@
+.what-about {
+  width: $width;
+  background-color: rgb(237,231,221);
+  padding-bottom: 75px;
+}
+
+.reference-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.reference {
+  width: 380px;
+  margin: 0 20px;
+}
+
+.reference__text {
+  margin-bottom: 25px;
+  font: 1.6rem/2.6rem "Roboto Regulat", "Arial", sans-serif;
+  color: $grey-text;
+}
+
+.referencer__photo-wrapper {
+  display: inline-block;
+}
+
+.referencer__name-and-title {
+  height: 80px;
+  margin-left: 20px;
+  vertical-align: top;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.referencer__name {
+  font: 1.6rem/2.4rem "Roboto Bold", "Arial", sans-serif;
+  color: $accent-color;
+}
+
+.referencer__title {
+  font: 1.6rem/2.4rem "Roboto Regular", "Arial", sans-serif;
+  color: $accent-color;
+}

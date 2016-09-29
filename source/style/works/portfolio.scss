@@ -1,0 +1,53 @@
+.portfolio {
+  width: $width;
+  background-color: rgb(237,231,221);
+}
+
+.portfolio-arrow-button-wrapper {
+  display: inline-block;
+  height: 100%;
+}
+
+.screenshots-wrapper {
+  display: inline-block;
+  margin-left: 250px;
+}
+
+.screenshot {
+  width: 500px;
+  height: 650px;
+}
+
+.slider {
+  display: inline-block;
+  width: 150px;
+}
+
+.slider__circle {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 21px;
+  border-radius: 50%;
+  border: 2px solid $accent-color;
+  background-color: white;
+}
+
+.slider__circle_active {
+  background-color: $accent-color;
+}
+
+.work-details {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 150px;
+}
+
+.portfolio__skills-used {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font: 1.6em 'Roboto Medium', Arial, sans-serif;
+  text-transform: uppercase;
+  color: $accent-color;
+  padding: 18px 0;
+}

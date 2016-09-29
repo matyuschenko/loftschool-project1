@@ -1,0 +1,44 @@
+.footer {
+  width: $width;
+  height: 145px;
+  background-color: $footer-with-opacity;
+  color: $light-font-color;
+  font: 1.6rem/2.4rem "Roboto Light", "Arial", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-description, .footer-links, .footer-contacts {
+  display: inline-block;
+  width: 360px;
+  padding: 0 30px;
+}
+
+.footer__copyright {
+  opacity: .5;
+}
+
+.footer__date {
+  opacity: .5;
+}
+
+.footer-links {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-navigation__item {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-navigation__link {
+  color: $light-font-color;
+}
+
+.footer-contacts {
+  opacity: .5;
+}

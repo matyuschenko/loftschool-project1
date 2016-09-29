@@ -1,0 +1,30 @@
+.avatar-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 155px;
+}
+
+.avatar-wrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 100%;
+}
+
+.person-name {
+  font: 3.5rem "Roboto Medium", Arial, sans-serif;
+  color: white;
+  margin: 25px 0 0 0;
+}
+
+.site-name {
+  font: 1.6rem "Roboto Medium", Arial, sans-serif;
+  color: white;
+  margin: 0;
+}

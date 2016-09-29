@@ -1,17 +1,19 @@
-include ../common/_mixins.pug
+extends ../head_layout
 
-button.button.authorize-button Авторизоваться
+block body
 
-.welcome
-    include ../common/avatar-name
-    include ../common/social-buttons
-    nav.site-navigation-wrapper
-        ul.site-navigation.buttons-list
-            li.site-navigation__item.buttons-list__item
-                a(href="works.html").site-navigation__link Мои работы
-            li.site-navigation__item.buttons-list__item
-                a(href="about.html").site-navigation__link Обо мне
-            li.site-navigation__item.buttons-list__item
-                a(href="blog.html").site-navigation__link Блог
+    button.button.authorize-button Авторизоваться
 
-footer.copyright © Максим Матющенко | сделал в loftschool | 2016
+    .welcome
+        include ../common/avatar-name
+        include ../common/social-buttons
+        nav.site-navigation-wrapper
+            ul.site-navigation.buttons-list
+                li.site-navigation__item.buttons-list__item
+                    a(href="works.html").site-navigation__link Мои работы
+                li.site-navigation__item.buttons-list__item
+                    a(href="about.html").site-navigation__link Обо мне
+                li.site-navigation__item.buttons-list__item
+                    a(href="blog.html").site-navigation__link Блог
+
+    footer.copyright © Максим Матющенко | сделал в loftschool | 2016

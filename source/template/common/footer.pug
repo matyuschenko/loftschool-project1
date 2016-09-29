@@ -1,16 +1,20 @@
 footer.footer
-    p.footer__description Этот сайт я сделал в рамках обучения в школе онлайн-образования Loftschool
-    p.footer__copyright © Максим Матющенко
-    p.foorter__date Сделал в loftschool | 2016
-    ul.site-navigation
-        li.site-navigation__item
-            a(href="works.html").site-navigation__link Мои работы
-        li.site-navigation__item
-            a(href="about.html").site-navigation__link Обо мне
-        li.site-navigation__item
-            a(href="blog.html").site-navigation__link Блог
-    include social-buttons
-    .footer__contacts
+    .footer-description
+        p.footer__description Этот сайт я сделал в рамках обучения в школе онлайн-образования Loftschool
+        p.footer__copyright © Максим Матющенко
+        p.footer__date Сделал в loftschool | 2016
+    .footer-links
+        ul.footer-navigation
+            li.footer-navigation__item
+                a(href="works.html").footer-navigation__link Мои работы
+            li.footer-navigation__item
+                a(href="about.html").footer-navigation__link Обо мне
+            li.footer-navigation__item
+                a(href="blog.html").footer-navigation__link Блог
+            li.footer-navigation__item
+                a(href="index.html").footer-navigation__link Авторизация
+        include social-buttons
+    .footer-contacts
         p.footer__skype Skype: maxim-mat@yandex.ru
         p.footer__email maxim-mat@yandex.ru
         p.footer__phone +7 903 228 8595

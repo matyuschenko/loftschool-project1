@@ -1,0 +1,26 @@
+.social-links {
+  padding: 0;
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links__item {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+}
+
+.social-links__item_name_vk {
+  background-image: url('../img/vk.svg');
+}
+
+.social-links__item_name_github {
+  background-image: url('../img/github.svg');
+}
+
+.social-links__item_name_linkedin {
+  background-image: url('../img/in.svg');
+}

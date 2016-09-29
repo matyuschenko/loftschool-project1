@@ -1,0 +1,22 @@
+.arrow-button {
+  background-image: url('../img/arrow_down.svg');
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+}
+
+.arrow-button_direction_top {
+  transform: rotate(180deg);
+}
+
+.arrow-button_direction_right {
+  transform: rotate(270deg);
+}
+
+.arrow-button_direction_bottom {
+
+}
+
+.arrow-button_direction_left {
+  transform: rotate(90deg);
+}

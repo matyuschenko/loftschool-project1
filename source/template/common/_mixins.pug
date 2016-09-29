@@ -3,7 +3,8 @@ mixin reference(text, src, name, title)
         .quotemark
         p.reference__text= text
         .referencer
-            .photo-wrapper
+            .photo-wrapper.referencer__photo-wrapper
                 img(src=src, alt="Фото, от кого отзыв", class="referencer__photo")
-            p.referencer__name= name
-            p.referencer__title= title
+            .referencer__name-and-title
+                p.referencer__name= name
+                p.referencer__title= title
