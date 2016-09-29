@@ -5,15 +5,35 @@
   background-size: auto 950px;
 }
 
+.header__first-row {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-social-buttons {
-  float: left;
   margin: 30px;
 }
 
+.watermark {
+  position: absolute;
+  width: $width;
+  height: 300px;
+  background-image: url('../img/portfolio_header.svg');
+  background-repeat: no-repeat;
+  z-index: 10;
+  opacity: .1;
+}
+
 .hamburger {
-  float: right;
   width: 40px;
   height: 35px;
   margin: 30px;
   background-image: url('../img/hamburger.svg');
+}
+
+.header__third-row {
+  height: 205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

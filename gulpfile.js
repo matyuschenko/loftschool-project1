@@ -22,16 +22,16 @@ $.path.task.forEach(function(taskPath) {
 $.gulp.task('default', $.gulp.series(
   'clean',
   $.gulp.parallel(
-    'sass',
-    'pug',
-    'js:foundation',
-    'js:process',
-    'copy:image',
-    'css:foundation',
-    'sprite:svg',
+      'sass',
+      'pug',
+      'js:foundation',
+      'js:process',
+      'copy:image',
+      'css:foundation',
+      'sprite:svg',
 
-    'copy:fonts',
-    'sprite:png'
+      //'sprite:png',
+      'copy:fonts'
   ),
   $.gulp.parallel(
     'watch',

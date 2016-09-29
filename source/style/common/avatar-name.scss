@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 155px;
+  padding-top: 60px;
+  z-index: 20;
 }
 
 .avatar-wrapper {
@@ -18,13 +19,13 @@
 }
 
 .person-name {
-  font: 3.5rem "Roboto Medium", Arial, sans-serif;
+  font: 3.5rem "robotomedium", "Arial", sans-serif;
   color: white;
   margin: 25px 0 0 0;
 }
 
 .site-name {
-  font: 1.6rem "Roboto Medium", Arial, sans-serif;
+  font: 1.6rem/2.4rem "robotoregular", "Arial", sans-serif;
   color: white;
   margin: 0;
 }

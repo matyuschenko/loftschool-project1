@@ -1,3 +1,5 @@
+@import 'fonts';
+
 @import 'common/variables';
 @import 'common/buttons';
 @import 'common/headers';
@@ -7,9 +9,11 @@
 @import 'common/footer';
 
 @import 'works/portfolio';
-@import 'works/reference';
 @import 'works/what-about';
 @import 'works/contact-me';
+
+@import 'about/about-me';
+@import 'about/map';
 
 html {
   font-size: 62.5%;

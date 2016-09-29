@@ -1,0 +1,46 @@
+.map-wrapper {
+  width: $width;
+  height: 830px;
+  background-image: url('../img/map.png');
+  position: relative;
+}
+
+.contacts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -190px;
+  margin-left: -140px;
+  padding: 35px;
+  width: 380px;
+  height: 285px;
+  background-color: rgba(255,255,255,.85);
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contacts__h2 {
+  margin: 0;
+  padding: 0;
+
+}
+
+.contacts-list__item {
+  vertical-align: middle;
+  padding: 10px 0;
+}
+
+.contacts-list__icon {
+  display: inline-block;
+  font: 3.5rem 'fontawesomeregular';
+  color: $accent-light-color;
+  width: 40px;
+}
+
+.contacts-list__text {
+  font: 1.6rem/2.4rem 'robotomedium', 'Arial', sans-serif;
+  color: $grey-text;
+  opacity: .8;
+}

@@ -3,16 +3,19 @@
   height: 145px;
   background-color: $footer-with-opacity;
   color: $light-font-color;
-  font: 1.6rem/2.4rem "Roboto Light", "Arial", sans-serif;
+  font: 1.6rem/2.4rem "robotolight", "Arial", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.footer-description {
+  padding-left: 30px;
+}
+
 .footer-description, .footer-links, .footer-contacts {
   display: inline-block;
   width: 360px;
-  padding: 0 30px;
 }
 
 .footer__copyright {
@@ -28,6 +31,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.footer-navigation {
+  width: 410px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
 }
 
 .footer-navigation__item {

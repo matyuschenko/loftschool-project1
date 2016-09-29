@@ -1,5 +1,5 @@
 .h1 {
-  font: 6.3rem 'SansusWebissimo Regular', 'Arial', sans-serif;
+  font: 6.3rem 'sansus_webissimoregular', 'Arial', sans-serif;
   color: rgb(55,62,66);
   text-transform: uppercase;
   text-align: center;
@@ -9,7 +9,7 @@
 }
 
 .h2 {
-  font: 3.25rem 'SansusWebissimo Regular', 'Arial', sans-serif;
+  font: 3.25rem 'sansus_webissimoregular', 'Arial', sans-serif;
   color: rgb(93,90,85);
   text-transform: uppercase;
   text-align: center;
@@ -18,4 +18,10 @@
 
 .h2_align_left {
   text-align: left;
+}
+
+.h3 {
+  font: 2.8rem/3.2rem "robotomedium";
+  color: $grey-text;
+  margin: 0 0 40px 0;
 }

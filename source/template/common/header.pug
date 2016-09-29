@@ -1,8 +1,11 @@
 header.header
-    .header-social-buttons
-        include social-buttons
-    .hamburger
-    .watermark
-    include avatar-name
-    .arrow-button.arrow-button_direction_bottom
+    .header__first-row
+        .header-social-buttons
+            +social-buttons("header")
+        .hamburger
+    .header__second-row
+        .watermark
+        include avatar-name
+    .header__third-row
+        .arrow-button.header__arrow-button.arrow-button_direction_bottom
     .triangles

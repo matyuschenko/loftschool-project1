@@ -8,19 +8,38 @@
 
 .social-links__item {
   display: inline-block;
-  width: 35px;
-  height: 35px;
   background-repeat: no-repeat;
+  font-size: 3rem;
 }
 
-.social-links__item_name_vk {
-  background-image: url('../img/vk.svg');
+.social-links__link_where_footer {
+   color: rgba(255,255,255,.5);
+ }
+
+.social-links__link_where_footer:hover {
+  color: white;
 }
 
-.social-links__item_name_github {
-  background-image: url('../img/github.svg');
+.social-links__link_where_footer:active {
+  color: white;
 }
 
-.social-links__item_name_linkedin {
-  background-image: url('../img/in.svg');
+.social-links__link_where_footer:focus {
+  color: rgba(255,255,255,.5);
+}
+
+.social-links__link_where_header {
+  color: white;
+}
+
+.social-links__link_where_header:hover {
+  color: $accent-color;
+}
+
+.social-links__link_where_header:active {
+  color: $accent-color;
+}
+
+.social-links__link_where_header:focus {
+  color: white;
 }

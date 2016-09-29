@@ -10,7 +10,6 @@
 
 .screenshots-wrapper {
   display: inline-block;
-  margin-left: 250px;
 }
 
 .screenshot {
@@ -41,6 +40,11 @@
   display: inline-block;
   vertical-align: top;
   margin-top: 150px;
+  max-width: 400px;
+}
+
+.work-details__h2 {
+
 }
 
 .portfolio__skills-used {

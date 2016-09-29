@@ -1,3 +1,17 @@
+mixin social-buttons(where)
+    - var vk_icon_html = '<i class="fa fa-vk" aria-hidden="true"></i>'
+    - var github_icon_html = '<i class="fa fa-github-alt" aria-hidden="true"></i>'
+    - var linkedin_icon_html = '<i class="fa fa-linkedin" aria-hidden="true"></i>'
+
+    ul.social-links
+        li.social-links__item.social-links__item_name_vk
+            a(target="_blank" href="https://vk.com/matyuschenko" class="social-links__link_where_"+where).social-links__link.social-links__link_name_vk!= vk_icon_html
+        li.social-links__item.social-links__item_name_github
+            a(target="_blank" href="https://github.com/matyuschenko" class="social-links__link_where_"+where).social-links__link.social-links__link_name_github!= github_icon_html
+        li.social-links__item.social-links__item_name_linkedin
+            a(target="_blank" href="https://ru.linkedin.com/in/matyuschenko" class="social-links__link_where_"+where).social-links__link.social-links__link_name_linkedin!= linkedin_icon_html
+
+
 mixin reference(text, src, name, title)
     .reference
         .quotemark

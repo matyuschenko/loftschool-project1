@@ -1,0 +1,68 @@
+.about-me {
+  width: $width;
+  background-color: $accent-light;
+}
+
+.cv {
+  display: inline-block;
+  width: 600px;
+}
+
+.cv__h1 {
+  padding: 0 0 60px 0;
+}
+
+.cv__photo-wrapper {
+  width: 600px;
+  text-align: center;
+}
+
+.cv__photo {
+  width: 460px;
+}
+
+.cv__h2 {
+  max-width: 600px;
+}
+
+.cv__text {
+  width: 460px;
+  font: 1.6rem/2.4rem "robotoregular";
+  color: $grey-text;
+  margin: 0 auto 40px auto;
+}
+
+.skills {
+  width: 590px;
+  vertical-align: top;
+}
+
+.skills__h2 {
+  margin: 10px auto 40px auto;
+  width: 260px;
+}
+
+.skills__description {
+  width: 490px;
+  font: 1.6rem/2.4rem "robotoregular";
+  color: $grey-text;
+  margin: 0 0 45px 0;
+}
+
+.skills {
+  display: inline-block;
+  max-width: 590px;
+}
+
+.skills__item {
+  display: inline-block;
+}
+
+.skills__chart {
+  width: 112px;
+  height: 112px;
+}
+
+.skills__h3 {
+  margin: 40px 0 0 0;
+}
