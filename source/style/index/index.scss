@@ -1,0 +1,126 @@
+.index-wrapper {
+  background: url('../img/desert.jpg');
+  min-height: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba($accent-background, .6);
+  border-radius: 10px 10px 0 0;
+  //display: none;
+}
+
+.welcome-social-buttons-wrapper {
+  margin: 35px 0;
+}
+
+.site-navigation-wrapper {
+  width: 100%;
+}
+
+.site-navigation__link {
+  display: inline-block;
+  width: 33.1%;
+  text-align: center;
+  font: 1.6rem/3.6rem 'robotomedium', 'Arial', sans-serif;
+  color: white;
+  background-color: $accent-secondary;
+
+  &:hover {
+    background-color: $accent-color;
+  }
+
+  &:active {
+    background-color: $accent-color;
+  }
+
+  &:focus {
+    background-color: $accent-secondary;
+  }
+
+  &:nth-child(n+2) {
+    border-left: 1px solid rgba(#fff, .5);
+  }
+
+}
+
+.site-navigation__link_big {
+  width: 49.8%;
+}
+
+.login {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba($accent-background, .6);
+  border-radius: 10px 10px 0 0;
+  display: none;
+}
+
+.login__h2 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  font: 1.6rem/24px 'robotobold', 'Arial', sans-serif;
+  color: white;
+}
+
+.login-form__icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: $grey-light;
+  vertical-align: middle;
+}
+
+.login-form__icon_type_login {
+  background-image: url('../img/login.svg');
+}
+
+.login-form__icon_type_password {
+  background-image: url('../img/password.svg');
+}
+
+.login-form__input {
+  width: 230px;
+  padding: 15px 20px;
+  font: 1.6rem "robotoregular", "Arial", sans-serif;
+  color: rgba($grey-text-dark, .5);
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  margin-bottom: 20px;
+}
+
+.login-form__checkbox {
+  text-align: center;
+}
+
+.login-form__captcha-text {
+  text-align: center;
+}
+
+.login-form__radio-buttons {
+  text-align: center;
+}
+
+.footer-copyright {
+  font: 1.6rem/10rem 'robotoregular', 'Arial', sans-serif;
+  color: white;
+}

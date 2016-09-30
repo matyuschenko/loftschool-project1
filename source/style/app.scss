@@ -8,6 +8,8 @@
 @import 'common/avatar-name';
 @import 'common/footer';
 
+@import 'index/index';
+
 @import 'works/portfolio';
 @import 'works/what-about';
 @import 'works/contact-me';
@@ -17,10 +19,12 @@
 
 html {
   font-size: 62.5%;
+  height: 100%;
 }
 
 body {
   margin: 0;
+  height: 100%;
 }
 
 a {
@@ -38,6 +42,13 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+button {
+  background-color: rgba(255,255,255,0);
+  border: 0 solid black;
+  margin: 0;
+  padding: 0;
 }
 
 //* {

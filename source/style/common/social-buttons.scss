@@ -12,34 +12,36 @@
   font-size: 3rem;
 }
 
-.social-links__link_where_footer {
+.social-links__link_color_light {
    color: rgba(255,255,255,.5);
+
+  &:hover {
+    color: white;
+  }
+
+  &:active {
+    color: white;
+  }
+
+  &:focus {
+    color: rgba(255,255,255,.5);
+  }
+
  }
 
-.social-links__link_where_footer:hover {
+.social-links__link_color_accent {
   color: white;
-}
 
-.social-links__link_where_footer:active {
-  color: white;
-}
+  &:hover {
+    color: $accent-color;
+  }
 
-.social-links__link_where_footer:focus {
-  color: rgba(255,255,255,.5);
-}
+  &:active {
+    color: $accent-color;
+  }
 
-.social-links__link_where_header {
-  color: white;
-}
+  &:focus {
+    color: white;
+  }
 
-.social-links__link_where_header:hover {
-  color: $accent-color;
-}
-
-.social-links__link_where_header:active {
-  color: $accent-color;
-}
-
-.social-links__link_where_header:focus {
-  color: white;
 }
