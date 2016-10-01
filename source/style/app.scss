@@ -17,6 +17,14 @@
 @import 'about/about-me';
 @import 'about/map';
 
+@import 'blog/blog';
+@import 'blog/blog-sidebar';
+@import 'blog/blog-content';
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   height: 100%;
@@ -29,6 +37,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 p {
@@ -51,6 +60,7 @@ button {
   padding: 0;
 }
 
-//* {
-//  box-sizing: border-box;
-//}
+.wrapper {
+  width: $width;
+  margin: auto;
+}

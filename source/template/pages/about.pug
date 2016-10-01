@@ -1,61 +1,62 @@
 extends ../page_layout
 
 block content
-    .about-me
-        .cv
-            h1.h1.cv__h1 Обо мне
-            .cv__photo-wrapper
-                img.cv__photo(src="assets/img/matyuschenko.jpg" alt="Фотография Максима Матющенко")
-            h2.h2.cv__h2 Кто я
-            p.cv__text.
-                Мне 26 лет, я разработчик из Москвы. Занимаюсь исследованиями, анализом и представлением данных. Среди интересов — визуализация данных и интерактивы.
-        .skills
-            h2.h2.skills__h2 Чем я могу быть вам полезен
-            p.skills__description Больше всего меня привлекает frontend-разработка, но я также активно осваиваю backend и готов к работе с ним.
-            .skills__charts
-                .skills__row
-                    h3.h3.skills__h3 Frontend
-                    ul.skills__list
-                        li.skills__item
-                            .skills__chart.skills__chart_type_html
-                        li.skills__item
-                            .skills__chart.skills__chart_type_css
-                        li.skills__item
-                            .skills__chart.skills__chart_type_js
-                .skills__row
-                    h3.h3.skills__h3 Backend
-                    ul.skills__list
-                        li.skills__item
-                            .skills__chart.skills__chart_type_php
-                        li.skills__item
-                            .skills__chart.skills__chart_type_mysql
-                        li.skills__item
-                            .skills__chart.skills__chart_type_node
-                        li.skills__item
-                            .skills__chart.skills__chart_type_mongo
-                .skills__row
-                    h3.h3.skills__h3 Workflow
-                    ul.skills__list
-                        li.skills__item
-                            .skills__chart.skills__chart_type_git
-                        li.skills__item
-                            .skills__chart.skills__chart_type_gulp
-                        li.skills__item
-                            .skills__chart.skills__chart_type_bower
-    .map-wrapper
-        .map
-        .contacts
-            h2.h2.contacts__h2 Контакты
-            ul.contacts-list
-                li.contacts-list__item
-                    span.contacts-list__icon.contacts-list__icon_name_skype!= '<i class="fa fa-skype" aria-hidden="true"></i>'
-                    span.contacts-list__text maxim-mat@yandex.ru
-                li.contacts-list__item
-                    span.contacts-list__icon.contacts-list__icon_name_email!= '<i class="fa fa-envelope" aria-hidden="true"></i>'
-                    span.contacts-list__text maxim-mat@yandex.ru
-                li.contacts-list__item
-                    span.contacts-list__icon.contacts-list__icon_name_phone!= '<i class="fa fa-phone" aria-hidden="true"></i>'
-                    span.contacts-list__text +7 903 228 8595
-                li.contacts-list__item
-                    span.contacts-list__icon.contacts-list__icon_name_address!= '<i class="fa fa-map-marker" aria-hidden="true"></i>'
-                    span.contacts-list__text Москва
+    section.about-me
+        .about-me__wrapper.wrapper
+            .cv
+                h1.h1.cv__h1 Обо мне
+                .cv__photo-wrapper
+                    img.cv__photo(src="assets/img/matyuschenko.jpg" alt="Фотография Максима Матющенко")
+                h2.h2.cv__h2 Кто я
+                p.cv__text.
+                    Мне 26 лет, я разработчик из Москвы. Занимаюсь исследованиями, анализом и представлением данных. Среди интересов — визуализация данных и интерактивы.
+            .skills
+                h2.h2.skills__h2 Чем я могу быть вам полезен
+                p.skills__description Больше всего меня привлекает frontend-разработка, но я также активно осваиваю backend и готов к работе с ним.
+                .skills__charts
+                    .skills__row
+                        h3.h3.skills__h3 Frontend
+                        ul.skills__list
+                            li.skills__item
+                                .skills__chart.skills__chart_type_html
+                            li.skills__item
+                                .skills__chart.skills__chart_type_css
+                            li.skills__item
+                                .skills__chart.skills__chart_type_js
+                    .skills__row
+                        h3.h3.skills__h3 Backend
+                        ul.skills__list
+                            li.skills__item
+                                .skills__chart.skills__chart_type_php
+                            li.skills__item
+                                .skills__chart.skills__chart_type_mysql
+                            li.skills__item
+                                .skills__chart.skills__chart_type_node
+                            li.skills__item
+                                .skills__chart.skills__chart_type_mongo
+                    .skills__row
+                        h3.h3.skills__h3 Workflow
+                        ul.skills__list
+                            li.skills__item
+                                .skills__chart.skills__chart_type_git
+                            li.skills__item
+                                .skills__chart.skills__chart_type_gulp
+                            li.skills__item
+                                .skills__chart.skills__chart_type_bower
+    section.map
+        .map__wrapper.wrapper
+            .contacts
+                h2.h2.contacts__h2 Контакты
+                ul.contacts-list
+                    li.contacts-list__item
+                        span.contacts-list__icon.contacts-list__icon_name_skype!= '<i class="fa fa-skype" aria-hidden="true"></i>'
+                        span.contacts-list__text maxim-mat@yandex.ru
+                    li.contacts-list__item
+                        span.contacts-list__icon.contacts-list__icon_name_email!= '<i class="fa fa-envelope" aria-hidden="true"></i>'
+                        span.contacts-list__text maxim-mat@yandex.ru
+                    li.contacts-list__item
+                        span.contacts-list__icon.contacts-list__icon_name_phone!= '<i class="fa fa-phone" aria-hidden="true"></i>'
+                        span.contacts-list__text +7 903 228 8595
+                    li.contacts-list__item
+                        span.contacts-list__icon.contacts-list__icon_name_address!= '<i class="fa fa-map-marker" aria-hidden="true"></i>'
+                        span.contacts-list__text Москва

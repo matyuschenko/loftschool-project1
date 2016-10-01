@@ -1,21 +1,22 @@
 extends ../page_layout
 
 block content
-    .blog
-        aside.blog-sidebar
-            ul.blog-navigation
-                li.blog-navigation__item.blog-navigation__item_selected Самое важное в SASS
-                li.blog-navigation__item Приёмы в вёрстке
-                li.blog-navigation__item Самый необходимвй набор
-                li.blog-navigation__item Почему я выбрал pug
-        .blog-content
-            .blog-post
-                h2.blog-post__header Самое важное в SASS
-                p.blog-post__date 28 сентября 2016
-                p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
-                p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
-            .blog-post
-                h2.blog-post__header Приёмы в вёрстве
-                p.blog-post__date 29 сентября 2016
-                p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
-                p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+    section.blog
+        .blog__wrapper.wrapper
+            aside.blog-sidebar
+                ul.blog-navigation
+                    li.blog-navigation__item.blog-navigation__item_selected Самое важное в SASS
+                    li.blog-navigation__item Приёмы в вёрстке, без которых не обходится ни один сайт
+                    li.blog-navigation__item Самый необходимый набор gulp-плагинов
+                    li.blog-navigation__item Почему я выбрал pug
+            section.blog-content
+                article.blog-post
+                    h2.blog-post__header Самое важное в SASS
+                    p.blog-post__date 28 сентября 2016
+                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+                article.blog-post
+                    h2.blog-post__header Приёмы в вёрстке, без которых не обходится ни один сайт
+                    p.blog-post__date 29 сентября 2016
+                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae

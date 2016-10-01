@@ -1,8 +1,15 @@
 .header {
-  width: $width;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   background-image: url('../img/desert.jpg');
-  background-size: auto 950px;
+  background-size: cover;
+}
+
+.header__wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header__first-row {
@@ -14,26 +21,29 @@
   margin: 30px;
 }
 
-.watermark {
-  position: absolute;
-  width: $width;
-  height: 300px;
-  background-image: url('../img/portfolio_header.svg');
-  background-repeat: no-repeat;
-  z-index: 10;
-  opacity: .1;
-}
+//.watermark {
+  //position: absolute;
+  //width: 100%;
+  //height: auto;
+  //background-image: url('../img/portfolio_header.svg');
+  //background-repeat: no-repeat;
+  //z-index: 10;
+  //opacity: .1;
+//  z-index: 10;
+//}
 
 .hamburger {
   width: 40px;
   height: 35px;
   margin: 30px;
   background-image: url('../img/hamburger.svg');
+
+  &:hover {
+    cursor: pointer;
+  }
+
 }
 
-.header__third-row {
-  height: 205px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header__arrow-button {
+  margin: auto;
 }

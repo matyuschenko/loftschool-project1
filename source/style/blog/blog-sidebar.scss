@@ -1,0 +1,37 @@
+.blog-sidebar {
+  display: inline-block;
+  width: 25.5%;
+  vertical-align: top;
+  text-align: right;
+}
+
+.blog-navigation__item {
+
+  font: 1.6rem/2.6rem 'robotoregular', 'Arial', sans-serif;
+  color: $grey-text;
+  padding-right: 20px;
+  margin-bottom: 30px;
+
+  &_selected {
+    font-family: 'robotobold', 'Arial', sans-serif;
+    color: $accent-color;
+    border-right: 3px solid $accent-color;
+  }
+
+}
+
+.blog-post__header {
+  font: 3.5rem/4rem 'sansus_webissimoregular', 'Arial', sans-serif;
+  color: $grey-text;
+}
+
+.blog-post__date {
+  font: 1.6rem/4rem 'robotoregular', 'Arial', sans-serif;
+  color: $accent-color;
+}
+
+.blog-post__paragraph{
+  font: 1.6rem/2.6rem 'robotoregular', 'Arial', sans-serif;
+  color: $grey-text;
+  margin-bottom: 12px;
+}

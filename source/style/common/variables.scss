@@ -1,11 +1,14 @@
 $footer-solid-color: rgb(55,62,66);
 $footer-with-opacity: rgba(55,62,66,.85);
 $accent-background: rgb(215,191,155);
+$accent-background-medium: rgb(238,189,93);
+$accent-background-strong: rgb(239,171,38);
 $accent-color: rgb(205,137,32);
 $accent-secondary: rgb(229,167,48);
 $accent-light-color: rgb(231,167,49);
 $accent-lightest-color: rgb(230,172,65);
 $accent-light: rgb(238,235,223);
+$accent-lightest: rgb(250,248,240);
 $light-font-color: white;
 $grey-text: rgb(93,90,85);
 $grey-text-opaque50: rgba(93,90,85,.5);
@@ -13,3 +16,5 @@ $grey-text-dark: rgb(55,62,66);
 $grey-light: rgb(240,239,233);
 
 $width: 1200px;
+
+$footer-height: 145px;

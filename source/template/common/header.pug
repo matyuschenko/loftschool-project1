@@ -1,11 +1,14 @@
 header.header
-    .header__first-row
-        .header-social-buttons
-            +social-buttons("accent")
-        .hamburger
-    .header__second-row
-        .watermark
-        include avatar-name
-    .header__third-row
-        .arrow-button.header__arrow-button.arrow-button_direction_bottom
-    .triangles
+    .header__wrapper.wrapper
+        //svg.watermark
+        //    use(xlink:href='../img/portfolio_header.svg#')
+
+        .header__first-row
+            .header-social-buttons
+                +social-buttons("accent")
+            .hamburger
+        .header__second-row
+            include avatar-name
+        .header__third-row
+            .arrow-button.header__arrow-button.arrow-button_direction_bottom
+        .triangles

@@ -1,6 +1,17 @@
 .portfolio {
-  width: $width;
+  width: 100%;
+  min-height: 100%;
   background-color: rgb(237,231,221);
+}
+
+.portfolio__wrapper {
+  position: relative;
+}
+
+.portfolio__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .portfolio-arrow-button-wrapper {
@@ -18,15 +29,19 @@
 }
 
 .slider {
+  position: absolute;
+  bottom: 0;
   display: inline-block;
   width: 150px;
+  left: 50%;
+  margin: 0 0 30px -48px;
 }
 
 .slider__circle {
   display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin: 0 21px;
+  width: 9px;
+  height: 9px;
+  margin: 0 10px;
   border-radius: 50%;
   border: 2px solid $accent-color;
   background-color: white;
@@ -39,12 +54,7 @@
 .work-details {
   display: inline-block;
   vertical-align: top;
-  margin-top: 150px;
   max-width: 400px;
-}
-
-.work-details__h2 {
-
 }
 
 .portfolio__skills-used {
@@ -54,4 +64,14 @@
   text-transform: uppercase;
   color: $accent-color;
   padding: 18px 0;
+}
+
+.button-link__text {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 40px;
+  background-color: $accent-background-strong;
+  border-radius: 3px;
+  color: white;
+  font: 1.6rem/3.6rem 'robotoregular';
 }
