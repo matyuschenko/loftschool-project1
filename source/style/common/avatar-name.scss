@@ -10,6 +10,7 @@
   height: 140px;
   border-radius: 50%;
   overflow: hidden;
+  margin-bottom: 25px;
 }
 
 .avatar {
@@ -19,7 +20,7 @@
 .avatar__big-label {
   font: 3.5rem "robotomedium", "Arial", sans-serif;
   color: white;
-  margin: 25px 0 0 0;
+  margin: 0;
 }
 
 .avatar__small-label {

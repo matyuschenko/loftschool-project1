@@ -10,11 +10,11 @@ block content
                 svg.watermark-works
                     use(xlink:href='assets/img/works_header.svg#Layer_1')
                 h1.h1 Мои работы
-            .slider
-                .slider__circle.slider__circle_active
-                .slider__circle
-                .slider__circle
-                .slider__circle
+            ul.slider
+                li.slider__circle.slider__circle_active
+                li.slider__circle
+                li.slider__circle
+                li.slider__circle
             .portfolio__content-wrapper
                 .portfolio-arrow-button-wrapper
                     .arrow-button.arrow-button_accent.arrow-button_direction_left
@@ -39,7 +39,7 @@ block content
 
     section.contact-me.background-container
         .contact-me__wrapper.wrapper
-            form.contact-me-form
+            form.contact-me-form(action='/')
                 h2.h2 Связаться со мной
                 input(class="contact-me__input contact-me__input_type_name", value="Имя")
                 input(class="contact-me__input contact-me__input_type_email", value="Почта")

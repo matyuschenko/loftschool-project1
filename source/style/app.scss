@@ -1,26 +1,3 @@
-@import 'fonts';
-
-@import 'common/variables';
-@import 'common/buttons';
-@import 'common/headers';
-@import 'common/header';
-@import 'common/social-buttons';
-@import 'common/avatar-name';
-@import 'common/footer';
-
-@import 'index/index';
-
-@import 'works/portfolio';
-@import 'works/what-about';
-@import 'works/contact-me';
-
-@import 'about/about-me';
-@import 'about/map';
-
-@import 'blog/blog';
-@import 'blog/blog-sidebar';
-@import 'blog/blog-content';
-
 * {
   box-sizing: border-box;
 }
@@ -59,6 +36,29 @@ button {
   margin: 0;
   padding: 0;
 }
+
+@import 'fonts';
+
+@import 'common/variables';
+@import 'common/buttons';
+@import 'common/headers';
+@import 'common/header';
+@import 'common/social-buttons';
+@import 'common/avatar-name';
+@import 'common/footer';
+
+@import 'index/index';
+
+@import 'works/portfolio';
+@import 'works/what-about';
+@import 'works/contact-me';
+
+@import 'about/about-me';
+@import 'about/map';
+
+@import 'blog/blog';
+@import 'blog/blog-sidebar';
+@import 'blog/blog-content';
 
 .background-container {
   width: 100%;

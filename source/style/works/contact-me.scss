@@ -30,12 +30,13 @@
 .contact-me__input_type_message {
   height: 140px;
   padding: 20px;
+  resize: none;
 }
 
 .contact-me-form__buttom {
   border: none;
   padding: 0;
-  width: 49.5%;
+  width: 49.6%;
   background-color: $accent-light-color;
   text-align: center;
   height: 45px;
