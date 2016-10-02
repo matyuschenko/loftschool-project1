@@ -1,7 +1,10 @@
 extends ../page_layout
 
 block content
-    section.about-me
+
+    +header("portfolio_header", "Максим Матющенко", "Личный сайт веб-разработчика")
+
+    section.about-me.background-container
         .about-me__wrapper.wrapper
             .cv
                 h1.h1.cv__h1 Обо мне
@@ -43,7 +46,7 @@ block content
                                 .skills__chart.skills__chart_type_gulp
                             li.skills__item
                                 .skills__chart.skills__chart_type_bower
-    section.map
+    section.map.background-container
         .map__wrapper.wrapper
             .contacts
                 h2.h2.contacts__h2 Контакты

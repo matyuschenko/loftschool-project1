@@ -1,5 +1,4 @@
 .portfolio {
-  width: 100%;
   min-height: 100%;
   background-color: rgb(237,231,221);
 }
@@ -12,6 +11,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.watermark-works {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  height: 20%;
+  opacity: .07;
 }
 
 .portfolio-arrow-button-wrapper {

@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //padding-top: 60px;
 }
 
 .avatar-wrapper {
@@ -17,13 +16,13 @@
   width: 100%;
 }
 
-.person-name {
+.avatar__big-label {
   font: 3.5rem "robotomedium", "Arial", sans-serif;
   color: white;
   margin: 25px 0 0 0;
 }
 
-.site-name {
+.avatar__small-label {
   font: 1.6rem/2.4rem "robotoregular", "Arial", sans-serif;
   color: white;
   margin: 0;

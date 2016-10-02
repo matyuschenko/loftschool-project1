@@ -1,7 +1,9 @@
 extends ../page_layout
 
 block content
-    section.blog
+    +header("portfolio_header", "Блог", "Статьи, которые я написал")
+
+    section.blog.background-container
         .blog__wrapper.wrapper
             aside.blog-sidebar
                 ul.blog-navigation

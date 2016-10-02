@@ -1,8 +1,18 @@
 .what-about {
-  width: 100%;
-  //min-height: 100%;
   background-color: rgb(237,231,221);
   padding-bottom: 75px;
+}
+
+.about__header {
+  position: relative;
+}
+
+.watermark-about {
+  position: absolute;
+  left: 30%;
+  width: 40%;
+  height: 60%;
+  opacity: .07;
 }
 
 .reference-wrapper {
@@ -13,11 +23,18 @@
 .reference {
   width: 380px;
   margin: 0 20px;
+
+  &:before {
+    content: url('../img/quote.png');
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
 }
 
 .reference__text {
   margin-bottom: 25px;
-  font: 1.6rem/2.6rem "Roboto Regular", "Arial", sans-serif;
+  font: 1.6rem/2.6rem "robotoregular", "Arial", sans-serif;
   color: $grey-text;
 }
 
@@ -35,11 +52,11 @@
 }
 
 .referencer__name {
-  font: 1.6rem/2.4rem "Roboto Bold", "Arial", sans-serif;
+  font: 1.6rem/2.4rem "robotobold", "Arial", sans-serif;
   color: $accent-color;
 }
 
 .referencer__title {
-  font: 1.6rem/2.4rem "Roboto Regular", "Arial", sans-serif;
+  font: 1.6rem/2.4rem "robotoregular", "Arial", sans-serif;
   color: $accent-color;
 }

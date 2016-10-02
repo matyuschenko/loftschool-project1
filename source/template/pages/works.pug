@@ -2,9 +2,14 @@ extends ../page_layout
 
 block content
 
-    section.portfolio
+    +header("portfolio_header", "Максим Матющенко", "Личный сайт веб-разработчика")
+
+    section.portfolio.background-container
         .portfolio__wrapper.wrapper
-            h1.h1 Мои работы
+            .portfolio__header
+                svg.watermark-works
+                    use(xlink:href='assets/img/works_header.svg#Layer_1')
+                h1.h1 Мои работы
             .slider
                 .slider__circle.slider__circle_active
                 .slider__circle
@@ -22,14 +27,17 @@ block content
                 .portfolio-arrow-button-wrapper
                     .arrow-button.arrow-button_accent.arrow-button_direction_right
 
-    section.what-about
+    section.what-about.background-container
         .what-about__wrapper.wrapper
-            h1.h1 Что обо мне говорят
+            .about__header
+                svg.watermark-about
+                    use(xlink:href='assets/img/about_header.svg#Layer_1')
+                h1.h1 Что обо мне говорят
             .reference-wrapper
                 +reference("Этот парень проходил обучение разработке не где-то, а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!", "assets/img/kovalchuk.png", "Ковальчук Дмитрий", "основатель Loftschool")
                 +reference("Это код выдержит любые испытания. Только, пожалуйста, не загружайте сайт на слишком старых браузерах!", "assets/img/zakharov.png", "Зар Захаров", "преподаватель")
 
-    section.contact-me
+    section.contact-me.background-container
         .contact-me__wrapper.wrapper
             form.contact-me-form
                 h2.h2 Связаться со мной

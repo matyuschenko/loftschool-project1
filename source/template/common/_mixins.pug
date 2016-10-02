@@ -11,9 +11,33 @@ mixin social-buttons(color)
         li.social-links__item.social-links__item_name_linkedin
             a(target="_blank" href="https://ru.linkedin.com/in/matyuschenko" class="social-links__link_color_"+color).social-links__link.social-links__link_name_linkedin!= linkedin_icon_html
 
+mixin avatar-name(big_label, small_label)
+    .avatar-name
+        .avatar-wrapper
+            img.avatar(src="assets/img/matyuschenko.jpg" alt="Фотография Максима Матющенко")
+        p.avatar__big-label= big_label
+        p.avatar__small-label= small_label
+
+mixin header(watermark_file, big_label, small_label)
+    - var svg_triangle = '<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1800 85" preserveaspectratio="none" class="triangle"><polygon points="0,0   0,86   900.8,86   900.8,75.5"></polygon><polygon points="1800,0   1800,86   900,86   900,75.5"></polygon></svg>';
+
+    header.header.background-container
+        .header__wrapper.wrapper
+            .header__first-row
+                .header-social-buttons
+                    +social-buttons("accent")
+                .hamburger
+            .header__second-row
+                +avatar-name(big_label, small_label)
+            .header__third-row
+                .arrow-button.header__arrow-button.arrow-button_direction_bottom
+            svg.watermark
+                use(xlink:href='assets/img/'+watermark_file+'.svg#Layer_1')
+        .triangle-box!= svg_triangle
+
 
 mixin reference(text, src, name, title)
-    .reference
+    blockquote.reference
         .quotemark
         p.reference__text= text
         .referencer

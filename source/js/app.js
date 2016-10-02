@@ -48,7 +48,6 @@
     }
 
     for (skill in skills_data) {
-        console.log(skill);
         $("."+skill).circliful({
             animation: 0,
             backgroundColor: background_color,
