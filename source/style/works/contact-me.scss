@@ -5,12 +5,20 @@
   background-position: 50% 100%;
   background-repeat: no-repeat;
   padding-bottom: $footer-height;
+  display: flex;
+  align-items: stretch;
+}
+
+.contact-me__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .contact-me-form {
   width: 380px;
   margin: auto;
-  padding-top: 20px;
   background-color: rgba(255,255,255,.25);
 }
 
@@ -51,17 +59,11 @@
   }
 
   &:last-child {
-    border-left: 2px solid #ccc;
     border-radius: 0 0 3px 0;
   }
 
 }
 
 .contact-me-arrow-button-wrapper {
-  //flex-grow: 1;
-  height: 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-top: 20px;
 }
