@@ -40,4 +40,8 @@
   color: white;
   padding: 5px 27.5px;
   border: 1px solid white;
+
+  @include phones {
+    align-self: center;
+  }
 }

@@ -39,6 +39,7 @@ button {
 
 @import 'fonts';
 
+@import 'common/mixins';
 @import 'common/variables';
 @import 'common/buttons';
 @import 'common/headers';
@@ -62,10 +63,18 @@ button {
 
 .background-container {
   width: 100%;
-  min-width: $width
 }
 
 .wrapper {
-  width: $width;
+  width: 1200px;
   margin: auto;
+
+  @include desktop {
+    width: 100%;
+  }
+
+  //@include phones {
+  //  width: 480px;
+  //}
+
 }

@@ -7,15 +7,16 @@ block body
         button.button.authorize-button Авторизоваться
 
         .welcome
-            +avatar-name("Максим Матющенко", "Личный сайт веб-разработчика")
-            .welcome-social-buttons-wrapper
-                +social-buttons("light")
+            .welcome-login-wrapper
+                +avatar-name("Максим Матющенко", "Личный сайт веб-разработчика")
+                .welcome-social-buttons-wrapper
+                    +social-buttons("light")
             nav.site-navigation-wrapper
                 a(href="works.html").site-navigation__link Мои работы
                 a(href="about.html").site-navigation__link Обо мне
                 a(href="blog.html").site-navigation__link Блог
 
-        .login
+        .login.welcome-login-wrapper
             h2.h2.login__h2 Авторизуйтесь
             form.login-form
                 .login-form-input-wrapper
@@ -37,4 +38,7 @@ block body
                 a(href="index.html").site-navigation__link.site-navigation__link_big На главную
                 a(href="index.html").site-navigation__link.site-navigation__link_big Войти
 
-        footer.copyright.footer-copyright © Максим Матющенко | сделано с любовью в loftschool | 2016
+        footer.copyright.footer-copyright
+            span.copyright__line © Максим Матющенко
+            span.copyright__separator= " | "
+            span.copyright__line сделано с любовью в loftschool | 2016

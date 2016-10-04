@@ -17,14 +17,27 @@
   width: 100%;
 }
 
-.avatar__big-label {
-  font: 3.5rem "robotomedium", "Arial", sans-serif;
+.avatar__label {
   color: white;
   margin: 0;
+  text-align: center;
 }
 
-.avatar__small-label {
+.avatar__label_big {
+  font: 2.8rem/3.5rem "robotomedium", "Arial", sans-serif;
+
+  @include phones {
+    font-size: 2rem;
+  }
+
+}
+
+.avatar__label_small {
   font: 1.6rem/2.4rem "robotoregular", "Arial", sans-serif;
-  color: white;
-  margin: 0;
+  color: rgba(255, 255, 255, .8);
+
+  @include phones {
+    font-size: 1.3rem;
+  }
+
 }

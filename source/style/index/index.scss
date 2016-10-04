@@ -7,17 +7,26 @@
   justify-content: space-between;
   align-items: center;
   background-size: cover;
+
+  @include phones {
+    min-height: 570px;
+  }
+
 }
 
 .welcome {
-  padding-top: 40px;
-  min-width: 380px;
+  margin: 35px 10px;
+}
+
+.welcome-login-wrapper {
+  padding: 40px 50px 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: rgba($accent-background, .6);
   border-radius: 10px 10px 0 0;
+
   //display: none;
 }
 
@@ -54,6 +63,10 @@
     border-left: 1px solid rgba(#fff, .5);
   }
 
+  @include phones {
+    font-size: 1.4rem;
+  }
+
 }
 
 .site-navigation__link_big {
@@ -61,13 +74,6 @@
 }
 
 .login {
-  width: 380px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba($accent-background, .6);
-  border-radius: 10px 10px 0 0;
   display: none;
 }
 
@@ -126,4 +132,19 @@
 .footer-copyright {
   font: 1.6rem/10rem 'robotoregular', 'Arial', sans-serif;
   color: white;
+}
+
+.copyright__line {
+  text-align: center;
+  @include phones {
+    display: block;
+    font: 1.4rem/2.4rem 'robotoregular', 'Arial', sans-serif;
+  }
+}
+
+.copyright__separator {
+  text-align: center;
+  @include phones {
+    display: none;
+  }
 }

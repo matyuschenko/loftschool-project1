@@ -15,8 +15,8 @@ mixin avatar-name(big_label, small_label)
     .avatar-name
         .avatar-wrapper
             img.avatar(src="assets/img/matyuschenko.jpg" alt="Фотография Максима Матющенко")
-        p.avatar__big-label= big_label
-        p.avatar__small-label= small_label
+        p.avatar__label.avatar__label_big= big_label
+        p.avatar__label.avatar__label_small= small_label
 
 mixin header(watermark_file, big_label, small_label, triangle_color)
     - var svg_triangle = '<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1800 85" preserveaspectratio="none" class="triangle triangle_'+triangle_color+'"><polygon points="0,0   0,86   900.8,86   900.8,75.5"></polygon><polygon points="1800,0   1800,86   900,86   900,75.5"></polygon></svg>';
@@ -31,7 +31,7 @@ mixin header(watermark_file, big_label, small_label, triangle_color)
                 +avatar-name(big_label, small_label)
             .header__third-row
                 .arrow-button.header__arrow-button.arrow-button_direction_bottom
-            svg.watermark
+            svg.watermark()
                 use(xlink:href='assets/img/'+watermark_file+'.svg#Layer_1')
         .triangle-box!= svg_triangle
 
@@ -39,7 +39,7 @@ mixin header(watermark_file, big_label, small_label, triangle_color)
 mixin reference(text, src, name, title)
     blockquote.reference
         .quotemark
-        p.reference__text= text
+        cite.reference__text= text
         .referencer
             .photo-wrapper.referencer__photo-wrapper
                 img(src=src, alt="Фото, от кого отзыв", class="referencer__photo")

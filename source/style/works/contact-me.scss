@@ -1,5 +1,5 @@
 .contact-me {
-  min-height: 100%;
+  background-color: $triangle-background;
   background-image: url('../img/sand.png');
   background-size: 100%;
   background-position: 50% 100%;
@@ -20,6 +20,7 @@
   width: 380px;
   margin: auto;
   background-color: rgba(255,255,255,.25);
+  margin-bottom: 45px;
 }
 
 .contact-me__input {
@@ -65,5 +66,5 @@
 }
 
 .contact-me-arrow-button-wrapper {
-  margin-top: 20px;
+  margin-bottom: 30px;
 }

@@ -62,6 +62,10 @@
   display: inline-block;
   vertical-align: top;
   max-width: 400px;
+
+  @include tablets {
+    //order: -1;
+  }
 }
 
 .portfolio__skills-used {
