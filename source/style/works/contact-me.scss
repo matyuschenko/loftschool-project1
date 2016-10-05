@@ -7,6 +7,7 @@
   padding-bottom: $footer-height;
   display: flex;
   align-items: stretch;
+  height: 100%;
 }
 
 .contact-me__wrapper {
@@ -63,8 +64,4 @@
     border-radius: 0 0 3px 0;
   }
 
-}
-
-.contact-me-arrow-button-wrapper {
-  margin-bottom: 30px;
 }

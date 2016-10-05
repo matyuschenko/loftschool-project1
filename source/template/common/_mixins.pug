@@ -31,7 +31,7 @@ mixin header(watermark_file, big_label, small_label, triangle_color)
                 +avatar-name(big_label, small_label)
             .header__third-row
                 .arrow-button.header__arrow-button.arrow-button_direction_bottom
-            svg.watermark()
+            svg.watermark
                 use(xlink:href='assets/img/'+watermark_file+'.svg#Layer_1')
         .triangle-box!= svg_triangle
 

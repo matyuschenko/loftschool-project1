@@ -8,10 +8,26 @@
   align-items: center;
   background-size: cover;
 
-  @include phones {
-    min-height: 570px;
-  }
+  //@include phones {
+  //  min-height: 570px;
+  //}
 
+}
+
+.authorize-button {
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 20px;
+  border-radius: 3px;
+  font: 1.6rem/3.6rem 'robotomedium', 'Arial', sans-serif;
+  color: white;
+  padding: 5px 27.5px;
+  border: 1px solid white;
+
+  @include phones {
+    align-self: center;
+    margin: 10px auto 5px;
+  }
 }
 
 .welcome {

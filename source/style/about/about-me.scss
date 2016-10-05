@@ -4,53 +4,88 @@
 
 .cv {
   display: inline-block;
-  width: 600px;
+  width: 50%;
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .cv__h1 {
   padding: 0 0 60px 0;
+
+  @include tablets {
+    font-size: 5rem;
+    padding-bottom: 45px;
+  }
+
+  @include phones {
+    font-size: 3.5rem;
+    padding-bottom: 25px;
+  }
 }
 
 .cv__photo-wrapper {
-  width: 600px;
+  width: 100%;
   text-align: center;
+  margin: auto;
 }
 
 .cv__photo {
-  width: 460px;
+  max-width: 100%;
 }
 
 .cv__h2 {
-  max-width: 600px;
+  max-width: 100%;
+
+  @include tablets {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  @include phones {
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .cv__text {
-  width: 460px;
+  width: 75%;
   font: 1.6rem/2.4rem "robotoregular";
   color: $grey-text;
   margin: 0 auto 40px auto;
 }
 
 .skills {
-  width: 590px;
+  display: inline-block;
+  width: 49%;
   vertical-align: top;
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .skills__h2 {
   margin: 10px auto 40px auto;
-  width: 260px;
+  width: 100%;
 }
 
 .skills__description {
-  width: 490px;
+  width: 100%;
   font: 1.6rem/2.4rem "robotoregular";
   color: $grey-text;
-  margin: 0 0 45px 0;
+  margin: 0 auto 40px auto;
+
+  @include tablets {
+    width: 75%;
+  }
 }
 
-.skills {
-  display: inline-block;
-  max-width: 590px;
+.skills__charts {
+  @include tablets {
+    text-align: center;
+  }
 }
 
 .skills__item {
@@ -64,4 +99,8 @@
 
 .skills__h3 {
   margin: 40px 0 0 0;
+
+  @include tablets {
+    font-size: 2.1rem;
+  }
 }

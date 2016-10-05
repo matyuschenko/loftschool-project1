@@ -45,9 +45,9 @@
             'label': 'Bower',
             'percent': 25
         }
-    }
+    };
 
-    for (skill in skills_data) {
+    for (var skill in skills_data) {
         $("."+skill).circliful({
             animation: 0,
             backgroundColor: background_color,
@@ -63,24 +63,125 @@
         });
     }
 
-    //$(".skills__chart_type_html").circliful({
-    //    animation: 0,
-    //    backgroundColor: background_color,
-    //    foregroundColor: foreground_color,
-    //    foregroundBorderWidth: 20,
-    //    backgroundBorderWidth: 20,
-    //    percent: 75,
-    //
-    //    noPercentageSign: true,
-    //    replacePercentageByText: 'HTML5',
-    //    percentageTextSize: 20,
-    //    fontColor: font_color
-    //});
-
-
-
     $('.timer').attr('dy', '.5em').attr('x', 70);
     $('.border').attr('cy', 70);
     $('.circle').attr('cy', 70);
+
+    window.initMap = function() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 55.751244, lng: 37.618423},
+            scrollwheel: false,
+            zoom: 13
+        })
+            .setOptions({styles: [
+                {
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        {
+                            "color": "#444444"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.locality",
+                    "elementType": "labels.text",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.neighborhood",
+                    "elementType": "labels.text",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#f2f2f2"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 45
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "color": "#46bcec"
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#d5aa3e"
+                        }
+                    ]
+                }
+            ]});
+    };
+    initMap();
 
 })();

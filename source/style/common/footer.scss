@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   height: $footer-height;
-  margin-top: -145px;
+  margin-top: -$footer-height;
   background-color: $footer-with-opacity;
   color: $light-font-color;
   font: 1.6rem/2.4rem "robotolight", "Arial", sans-serif;
@@ -14,9 +14,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include desktop {
+    width: 100%;
+  }
 }
 
 .footer-description, .footer-links, .footer-contacts {
+  //height: $footer-height;
   display: inline-block;
   padding: 0 30px;
 }
