@@ -1,0 +1,25 @@
+.flip-container {
+  perspective: 1000px;
+}
+
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d; /*flat*/
+  position: relative;
+}
+
+.flipper__front, .flipper__back {
+  backface-visibility: hidden;
+}
+
+.flipper__front {
+  //z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+.flipper__back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+}

@@ -12,6 +12,16 @@ html(lang="ru-RU")
 
     body
         block body
-        script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ECKASqNjr2kdFY1xJotto6NKcwsZqwI&callback=initMap")
+        .main-menu
+            nav.main-menu__list
+                a.main-menu__item(href="works.html") Мои работы
+                a.main-menu__item(href="about.html") Обо мне
+                a.main-menu__item(href="blog.html") Блог
+                a.main-menu__item(href="index.html") Авторизация
+        .preloader
+            .preloader__spinner
+                .preloader__animation
+                .preloader__percent
+        //script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ECKASqNjr2kdFY1xJotto6NKcwsZqwI&callback=initMap")
         script(src="assets/js/foundation.js")
         script(src="assets/js/app.js")

@@ -1,7 +1,16 @@
 .map_and_contacts {
   height: 100%;
-  padding-bottom: $footer-height;
+  //margin-bottom: $footer-height;
   position: relative;
+  //pointer-events: none;
+
+  @include tablets {
+    //margin-bottom: 249px;
+  }
+
+  @include tablets {
+    //margin-bottom: 398px;
+  }
 }
 
 .map {
@@ -24,7 +33,7 @@
   top: 50%;
   left: 50%;
   padding: 35px;
-  min-width: 380px;
+  //min-width: 380px;
   background-color: rgba(255,255,255,.85);
   border-radius: 7px;
   display: flex;

@@ -1,56 +1,105 @@
 .footer {
   width: 100%;
   height: $footer-height;
-  margin-top: -$footer-height;
+  //margin-top: -$footer-height;
   background-color: $footer-with-opacity;
   color: $light-font-color;
   font: 1.6rem/2.4rem "robotolight", "Arial", sans-serif;
   padding: 30px 0;
+
+  @include laptop {
+    font-size: 1.2rem;
+    //margin-top: -249px;
+  }
+
+  @include tablets {
+    height: auto;
+    //margin-top: -398px;
+  }
 }
 
 .footer-wrapper {
-  width: $width;
+  width: 100%;
+  max-width: 1800px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @include desktop {
-    width: 100%;
+  @include tablets {
+    display: block;
   }
 }
 
 .footer-description, .footer-links, .footer-contacts {
-  //height: $footer-height;
   display: inline-block;
   padding: 0 30px;
 }
 
 .footer-description {
   width: 35%;
+
+  @include tablets {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(117,116,112);
+    margin-bottom: 20px;
+  }
+
+  @include phones {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
 }
 
 .footer__copyright {
   opacity: .5;
+
+  @include tablets {
+    display: inline-block;
+  }
 }
 
 .footer__date {
   opacity: .5;
+
+  @include tablets {
+    display: inline-block;
+  }
 }
 
 .footer-links {
   width: 39.2%;
   height: 100px;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
   border-left: 1px solid rgb(117,116,112);
   border-right: 1px solid rgb(117,116,112);
+  vertical-align: top;
+
+  @include tablets {
+    width: 50%;
+    border: 0px solid rgb(117,116,112);
+  }
+
+  @include phones {
+    width: 100%;
+    border-bottom: 1px solid rgb(117,116,112);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
 }
 
 .footer-navigation {
   display: flex;
   justify-content: space-between;
+
+  @include phones {
+    width: 100%;
+  }
 }
 
 .footer-navigation__item {
@@ -64,6 +113,16 @@
 .footer-contacts {
   width: 25.8%;
   opacity: .5;
+
+  @include tablets {
+    width: 49%;
+    text-align: right;
+  }
+
+  @include phones {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .footer__contact {

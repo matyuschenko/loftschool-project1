@@ -15,12 +15,16 @@ block content
                 li.slider__circle
                 li.slider__circle
                 li.slider__circle
+            .work-details.work-details_separate
+                h2.h2.h2_align_left.work-details__h2 Сайт школы онлайн образования
+                p.portfolio__skills-used HTML, CSS, Javascript
+                a(href="ya.ru" target="_blank").button-link__text!= '<i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт'
             .portfolio__content-wrapper
                 .portfolio-arrow-button-wrapper
                     .arrow-button.arrow-button_accent.arrow-button_direction_left
                 .screenshots-wrapper
                     img.screenshot(src="assets/img/work-1.png" alt="Скриншот с примером работы")
-                .work-details
+                .work-details.work-details_in-row
                     h2.h2.h2_align_left.work-details__h2 Сайт школы онлайн образования
                     p.portfolio__skills-used HTML, CSS, Javascript
                     a(href="ya.ru" target="_blank").button-link__text!= '<i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт'
@@ -40,7 +44,7 @@ block content
     section.contact-me.background-container
         .contact-me__wrapper.wrapper
             form.contact-me-form(action='/')
-                h2.h2 Связаться со мной
+                h2.h2.contact-me__h2 Связаться со мной
                 input(class="contact-me__input contact-me__input_type_name", value="Имя")
                 input(class="contact-me__input contact-me__input_type_email", value="Почта")
                 textarea(class="contact-me__input contact-me__input_type_message") Ваше сообщение

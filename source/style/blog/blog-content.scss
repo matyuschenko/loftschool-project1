@@ -2,5 +2,47 @@
   display: inline-block;
   width: 74%;
   padding-left: 100px;
-  padding-bottom: $footer-height;
+  //padding-bottom: $footer-height;
+
+  @include tablets {
+    width: 100%;
+    padding: 0;
+    //padding: 0 0 249px 0;
+  }
+
+  @include phones {
+    //padding-bottom: 398px;
+  }
+}
+
+.blog-post__header {
+  font: 3.5rem/4rem 'sansus_webissimoregular', 'Arial', sans-serif;
+  color: $grey-text;
+
+  @include tablets {
+    font-size: 3rem;
+  }
+
+  @include tablets {
+    font-size: 2.1rem;
+  }
+}
+
+.blog-post__date {
+  font: 1.6rem/4rem 'robotoregular', 'Arial', sans-serif;
+  color: $accent-color;
+
+  @include tablets {
+    font-size: 1.4rem;
+  }
+}
+
+.blog-post__paragraph{
+  font: 1.6rem/2.6rem 'robotoregular', 'Arial', sans-serif;
+  color: $grey-text;
+  margin-bottom: 12px;
+
+  @include tablets {
+    font-size: 1.4rem;
+  }
 }

@@ -47,8 +47,11 @@ button {
 @import 'common/social-buttons';
 @import 'common/avatar-name';
 @import 'common/footer';
+@import 'common/preloader';
+@import 'common/main-menu';
 
 @import 'index/index';
+@import 'index/flip';
 
 @import 'works/portfolio';
 @import 'works/what-about';
@@ -72,9 +75,5 @@ button {
   @include desktop {
     width: 100%;
   }
-
-  //@include phones {
-  //  width: 480px;
-  //}
 
 }

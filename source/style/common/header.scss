@@ -40,6 +40,7 @@
   margin: 30px;
   background-image: url('../img/hamburger.svg');
   background-size: contain;
+  z-index: 10000;
 
   &:hover {
     cursor: pointer;

@@ -3,5 +3,9 @@
 }
 
 .blog__wrapper {
-  padding: 70px
+  padding: 70px;
+
+  @include tablets {
+    padding: 30px;
+  }
 }

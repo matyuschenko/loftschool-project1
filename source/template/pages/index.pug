@@ -6,37 +6,42 @@ block body
 
         button.button.authorize-button Авторизоваться
 
-        .welcome
-            .welcome-login-wrapper
-                +avatar-name("Максим Матющенко", "Личный сайт веб-разработчика")
-                .welcome-social-buttons-wrapper
-                    +social-buttons("light")
-            nav.site-navigation-wrapper
-                a(href="works.html").site-navigation__link Мои работы
-                a(href="about.html").site-navigation__link Обо мне
-                a(href="blog.html").site-navigation__link Блог
+        .welcome.flip-container
+            .flipper.state_front
+                .me.flipper__front
+                    .welcome-wrapper.me-wrapper
+                        +avatar-name("Максим Матющенко", "Личный сайт веб-разработчика")
+                        .welcome-social-buttons-wrapper
+                            +social-buttons("light")
+                    nav.site-navigation-wrapper
+                        a(href="works.html").site-navigation__link Мои работы
+                        a(href="about.html").site-navigation__link Обо мне
+                        a(href="blog.html").site-navigation__link Блог
 
-        .login.welcome-login-wrapper
-            h2.h2.login__h2 Авторизуйтесь
-            form.login-form
-                .login-form-input-wrapper
-                    span.login-form__icon.login-form__icon_type_login
-                    input.login-form__input.login-form__input_type_login(value="Пароль")
-                .login-form-input-wrapper
-                    span.login-form__icon.login-form__icon_type_password
-                    input.login-form__input.login-form__input_type_password(value="Пароль")
-                div.login-form__checkbox
-                    input.checkbox.login-form__checkbox(type="checkbox" name="robot-checkbox" value="yes")
-                    span.login-form__checkbox-text Я человек
-                span.login-form__captcha-text Вы точно не робот?
-                div.login-form__radio-buttons
-                    input(type="radio" name="captcha" value="yes").login-form__radio
-                    span.login-form__radio-label Да
-                    input(type="radio" name="captcha" value="no").login-form__radio
-                    span.login-form__radio-label Не уверен
-            nav.site-navigation-wrapper
-                a(href="index.html").site-navigation__link.site-navigation__link_big На главную
-                a(href="index.html").site-navigation__link.site-navigation__link_big Войти
+                .login.flipper__back
+                    .welcome-wrapper.login-wrapper
+                        h2.h2.login__h2 Авторизуйтесь
+                        form.login-form
+                            .login-form-input-wrapper
+                                span.login-form__icon.login-form__icon_type_login
+                                    input.login-form__input.login-form__input_type_login(value="Логин")
+                            .login-form-input-wrapper
+                                span.login-form__icon.login-form__icon_type_password
+                                    input.login-form__input.login-form__input_type_password(value="Пароль")
+                            div.login-form__checkbox
+                                input.checkbox.login-form__checkbox(type="checkbox" name="robot-checkbox" value="yes")
+                                span.login-form__checkbox-text Я человек
+                            span.login-form__captcha-text Вы точно не робот?
+                            div.login-form__radio-buttons
+                                .radio-group
+                                    input(type="radio" name="captcha" value="yes").login-form__radio
+                                    span.login-form__radio-label Да
+                                .radio-group
+                                    input(type="radio" name="captcha" value="no").login-form__radio
+                                    span.login-form__radio-label Не уверен
+                    nav.site-navigation-wrapper
+                        a(href="index.html").site-navigation__link.site-navigation__link_big На главную
+                        a(href="index.html").site-navigation__link.site-navigation__link_big Войти
 
         footer.copyright.footer-copyright
             span.copyright__line © Максим Матющенко

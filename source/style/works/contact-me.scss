@@ -4,10 +4,18 @@
   background-size: 100%;
   background-position: 50% 100%;
   background-repeat: no-repeat;
-  padding-bottom: $footer-height;
+  //padding-bottom: $footer-height;
   display: flex;
   align-items: stretch;
-  height: 100%;
+  min-height: 100%;
+
+  @include tablets {
+    //padding-bottom: 249px;
+  }
+
+  @include tablets {
+    //padding-bottom: 398px;
+  }
 }
 
 .contact-me__wrapper {
@@ -22,6 +30,16 @@
   margin: auto;
   background-color: rgba(255,255,255,.25);
   margin-bottom: 45px;
+
+  @include phones {
+    width: 90%;
+  }
+}
+
+.contact-me__h2 {
+  @include phones {
+    font-size: 2.1rem;
+  }
 }
 
 .contact-me__input {
@@ -46,7 +64,7 @@
 .contact-me-form__buttom {
   border: none;
   padding: 0;
-  width: 49.6%;
+  width: 49.5%;
   background-color: $accent-light-color;
   text-align: center;
   height: 45px;
@@ -54,6 +72,7 @@
   font: 1.6rem "Roboto Medium", "Arial", sans-serif;
   color: white;
   border-radius: 0 0 0 3px;
+  border-image-width: 0;
 
   &:hover {
     cursor: pointer;
@@ -62,6 +81,10 @@
 
   &:last-child {
     border-radius: 0 0 3px 0;
+  }
+
+  @include phones {
+    width: 49.3%;
   }
 
 }

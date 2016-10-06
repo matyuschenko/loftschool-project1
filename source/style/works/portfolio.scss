@@ -28,11 +28,19 @@
 
 .screenshots-wrapper {
   display: inline-block;
+  width: 40%;
+
+  @include tablets {
+    width: 60%;
+  }
+
+  @include phones {
+    width: 80%;
+  }
 }
 
 .screenshot {
-  width: 500px;
-  height: 650px;
+  max-width: 100%;
 }
 
 .slider {
@@ -61,10 +69,36 @@
 .work-details {
   display: inline-block;
   vertical-align: top;
-  max-width: 400px;
+  width: 35%;
+}
+
+.work-details_in-row {
+  @include tablets {
+    display: none;
+  }
+}
+
+.work-details_separate {
+  display: none;
 
   @include tablets {
-    //order: -1;
+    display: block;
+    margin: 0px auto 100px;
+    width: 50%;
+    text-align: center;
+  }
+
+  @include phones {
+    display: block;
+    margin: 0px auto 100px;
+    width: 75%;
+    text-align: center;
+  }
+}
+
+.work-details__h2 {
+  @include tablets {
+    text-align: center;
   }
 }
 
