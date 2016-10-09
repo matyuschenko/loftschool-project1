@@ -3,6 +3,18 @@
   background-color: rgb(237,231,221);
 }
 
+.portfolio__header {
+  position: relative;
+}
+
+.watermark-works {
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  opacity: .07;
+  top: 5%;
+}
+
 .portfolio__wrapper {
   position: relative;
 }
@@ -11,19 +23,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.watermark-works {
-  position: absolute;
-  left: 30%;
-  width: 40%;
-  height: 20%;
-  opacity: .07;
+  position: relative;
 }
 
 .portfolio-arrow-button-wrapper {
   display: inline-block;
   height: 100%;
+}
+
+.portfolio-arrow-button_direction_left {
+  float: left;
+}
+
+.portfolio-arrow-button_direction_left {
+  float: right;
 }
 
 .screenshots-wrapper {

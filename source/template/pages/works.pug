@@ -5,31 +5,31 @@ block content
     +header("portfolio_header", "Максим Матющенко", "Личный сайт веб-разработчика", "default")
 
     section.portfolio.background-container
+        .portfolio__header
+            svg.watermark-works
+                use(xlink:href='assets/img/works_header.svg#Layer_1')
+            h1.h1 Мои работы
         .portfolio__wrapper.wrapper
-            .portfolio__header
-                svg.watermark-works
-                    use(xlink:href='assets/img/works_header.svg#Layer_1')
-                h1.h1 Мои работы
-            ul.slider
-                li.slider__circle.slider__circle_active
-                li.slider__circle
-                li.slider__circle
-                li.slider__circle
             .work-details.work-details_separate
                 h2.h2.h2_align_left.work-details__h2 Сайт школы онлайн образования
                 p.portfolio__skills-used HTML, CSS, Javascript
                 a(href="ya.ru" target="_blank").button-link__text!= '<i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт'
             .portfolio__content-wrapper
-                .portfolio-arrow-button-wrapper
-                    .arrow-button.arrow-button_accent.arrow-button_direction_left
+                .portfolio-arrow-button-wrapper.portfolio-arrow-button-wrapper_left
+                    .arrow-button.arrow-button_accent.arrow-button_direction_left.portfolio-arrow-button_direction_left
                 .screenshots-wrapper
                     img.screenshot(src="assets/img/work-1.png" alt="Скриншот с примером работы")
+                ul.slider
+                    li.slider__circle.slider__circle_active
+                    li.slider__circle
+                    li.slider__circle
+                    li.slider__circle
                 .work-details.work-details_in-row
                     h2.h2.h2_align_left.work-details__h2 Сайт школы онлайн образования
                     p.portfolio__skills-used HTML, CSS, Javascript
                     a(href="ya.ru" target="_blank").button-link__text!= '<i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт'
-                .portfolio-arrow-button-wrapper
-                    .arrow-button.arrow-button_accent.arrow-button_direction_right
+                .portfolio-arrow-button-wrapper.portfolio-arrow-button-wrapper_right
+                    .arrow-button.arrow-button_accent.arrow-button_direction_right.portfolio-arrow-button_direction_left
 
     section.what-about.background-container
         .what-about__wrapper.wrapper

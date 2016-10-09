@@ -5,8 +5,26 @@
   text-align: right;
 
   @include tablets {
-    display: none;
+    width: 33.3%;
+    position: fixed;
+    left: -33.3%;
+    //left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: $accent-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+}
+
+.blog-navigation {
+  //@include tablets {
+  //  width: 33.3%;
+  //  position: fixed;
+  //  top: 50%;
+  //  transform: translate(0,-50%);
+  //}
 }
 
 .blog-navigation__item {
@@ -17,17 +35,48 @@
   padding-right: 20px;
   margin-bottom: 30px;
 
-  &_selected {
-    font-family: 'robotobold', 'Arial', sans-serif;
-    color: $accent-color;
-    border-right: 3px solid $accent-color;
-  }
-
   &:hover {
     font-family: 'robotobold', 'Arial', sans-serif;
     color: $accent-color;
     border-right: 3px solid $accent-color;
+
+    @include tablets {
+      color: white;
+      border: 0;
+    }
+  }
+
+  @include tablets {
+    color: rgba(255,255,255,.66);
+    font: 1.2rem/1.8rem 'robotoregular', 'Arial', sans-serif;
+  }
+
+  &_selected {
+    font-family: 'robotobold', 'Arial', sans-serif;
+    color: $accent-color;
+    border-right: 3px solid $accent-color;
+
+    @include tablets {
+      color: white;
+      border: 0;
+    }
   }
 
 }
 
+.small-screen-button {
+  width: 40px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $accent-color;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+
+  @include tablets {
+    display: block;
+  }
+}
