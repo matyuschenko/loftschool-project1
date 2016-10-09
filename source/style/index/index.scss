@@ -53,12 +53,15 @@
   margin: 35px 0;
 }
 
-.site-navigation-wrapper {
+.welcome-buttons-wrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.site-navigation__link {
-  display: inline-block;
+.welcome-button {
+  border: none;
+  //display: inline-block;
   width: 33.33%;
   text-align: center;
   font: 1.6rem/3.6rem 'robotomedium', 'Arial', sans-serif;
@@ -88,8 +91,8 @@
 
 }
 
-.site-navigation__link_big {
-  width: 49.8%;
+.welcome-button_big {
+  width: 50%;
 }
 
 .login-wrapper {
@@ -120,7 +123,6 @@
 .login-form__icon {
   display: inline-block;
   width: 100%;
-  //height: 45px;
   text-align: right;
   background-repeat: no-repeat;
   background-size: 10%;

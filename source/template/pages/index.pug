@@ -13,15 +13,15 @@ block body
                         +avatar-name("Максим Матющенко", "Личный сайт веб-разработчика")
                         .welcome-social-buttons-wrapper
                             +social-buttons("light")
-                    nav.site-navigation-wrapper
-                        a(href="works.html").site-navigation__link Мои работы
-                        a(href="about.html").site-navigation__link Обо мне
-                        a(href="blog.html").site-navigation__link Блог
+                    .welcome-buttons-wrapper
+                        a(href="works.html").welcome-button Мои работы
+                        a(href="about.html").welcome-button Обо мне
+                        a(href="blog.html").welcome-button Блог
 
                 .login.flipper__back
                     .welcome-wrapper.login-wrapper
                         h2.h2.login__h2 Авторизуйтесь
-                        form.login-form
+                        form#login-form.login-form
                             .login-form-input-wrapper
                                 span.login-form__icon.login-form__icon_type_login
                                     input.login-form__input.login-form__input_type_login(value="Логин")
@@ -39,9 +39,9 @@ block body
                                 .radio-group
                                     input(type="radio" name="captcha" value="no").login-form__radio
                                     span.login-form__radio-label Не уверен
-                    nav.site-navigation-wrapper
-                        a(href="index.html").site-navigation__link.site-navigation__link_big На главную
-                        a(href="index.html").site-navigation__link.site-navigation__link_big Войти
+                    .welcome-buttons-wrapper
+                        input.welcome-button.welcome-button_big(type="submit" value="Войти" form="login-form")
+                        input.welcome-button.welcome-button_big(type="reset" value="Очистить" form="login-form")
 
         footer.copyright.footer-copyright
             span.copyright__line © Максим Матющенко

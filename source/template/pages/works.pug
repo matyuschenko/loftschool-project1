@@ -48,7 +48,8 @@ block content
                 input(class="contact-me__input contact-me__input_type_name", value="Имя")
                 input(class="contact-me__input contact-me__input_type_email", value="Почта")
                 textarea(class="contact-me__input contact-me__input_type_message") Ваше сообщение
-                input.contact-me-form__buttom(type="submit" value="Отправить")
-                input.contact-me-form__buttom(type="reset" value="Очистить")
+                .contact-me-form__buttons-wrapper
+                    input.contact-me-form__button(type="submit" value="Отправить")
+                    input.contact-me-form__button(type="reset" value="Очистить")
             .contact-me-arrow-button-wrapper
                 .arrow-button.arrow-button_direction_top

@@ -61,10 +61,16 @@
   resize: none;
 }
 
-.contact-me-form__buttom {
+.contact-me-form__buttons-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-me-form__button {
   border: none;
   padding: 0;
-  width: 49.5%;
+  width: 50%;
   background-color: $accent-light-color;
   text-align: center;
   height: 45px;
@@ -81,6 +87,7 @@
 
   &:last-child {
     border-radius: 0 0 3px 0;
+    border-left: 1px solid rgba(#fff, .5);
   }
 
   @include phones {
