@@ -3,6 +3,8 @@
   background-color: rgb(237,231,221);
 }
 
+
+// HEADER
 .portfolio__header {
   position: relative;
 }
@@ -15,30 +17,34 @@
   top: 5%;
 }
 
-.portfolio__wrapper {
-  position: relative;
+
+// BUTTONS
+.portfolio-arrow-button-wrapper {
+  display: inline-block;
+  width: 40px;
 }
 
-.portfolio__content-wrapper {
+
+// SLIDER
+.portfolio__main {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
 
-.portfolio-arrow-button-wrapper {
-  display: inline-block;
-  height: 100%;
+.portfolio__project {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablets {
+    flex-direction: column;
+  }
 }
 
-.portfolio-arrow-button_direction_left {
-  float: left;
-}
 
-.portfolio-arrow-button_direction_left {
-  float: right;
-}
-
+// WORKS
 .screenshots-wrapper {
   display: inline-block;
   width: 40%;
@@ -56,56 +62,20 @@
   max-width: 100%;
 }
 
-.slider {
-  position: absolute;
-  bottom: 0;
-  display: inline-block;
-  width: 150px;
-  left: 50%;
-  margin: 0 0 30px -48px;
-}
-
-.slider__circle {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin: 0 10px;
-  border-radius: 50%;
-  border: 2px solid $accent-color;
-  background-color: white;
-}
-
-.slider__circle_active {
-  background-color: $accent-color;
-}
-
 .work-details {
   display: inline-block;
   vertical-align: top;
   width: 35%;
-}
-
-.work-details_in-row {
-  @include tablets {
-    display: none;
-  }
-}
-
-.work-details_separate {
-  display: none;
 
   @include tablets {
-    display: block;
+    order: -1;
     margin: 0px auto 100px;
     width: 50%;
     text-align: center;
   }
 
   @include phones {
-    display: block;
-    margin: 0px auto 100px;
     width: 75%;
-    text-align: center;
   }
 }
 
@@ -132,4 +102,29 @@
   border-radius: 3px;
   color: white;
   font: 1.6rem/3.6rem 'robotoregular';
+}
+
+
+// CIRCLES
+.slider-nav-circles {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 150px;
+  left: 50%;
+  margin: 0 0 30px -48px;
+}
+
+.slider-nav-circles__circle {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 2px solid $accent-color;
+  background-color: white;
+}
+
+.slider-nav-circles__circle_active {
+  background-color: $accent-color;
 }

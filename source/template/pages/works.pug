@@ -9,27 +9,24 @@ block content
             svg.watermark-works
                 use(xlink:href='assets/img/works_header.svg#Layer_1')
             h1.h1 Мои работы
-        .portfolio__wrapper.wrapper
-            .work-details.work-details_separate
-                h2.h2.h2_align_left.work-details__h2 Сайт школы онлайн образования
-                p.portfolio__skills-used HTML, CSS, Javascript
-                a(href="ya.ru" target="_blank").button-link__text!= '<i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт'
-            .portfolio__content-wrapper
-                .portfolio-arrow-button-wrapper.portfolio-arrow-button-wrapper_left
-                    .arrow-button.arrow-button_accent.arrow-button_direction_left.portfolio-arrow-button_direction_left
-                .screenshots-wrapper
-                    img.screenshot(src="assets/img/work-1.png" alt="Скриншот с примером работы")
-                ul.slider
-                    li.slider__circle.slider__circle_active
-                    li.slider__circle
-                    li.slider__circle
-                    li.slider__circle
-                .work-details.work-details_in-row
-                    h2.h2.h2_align_left.work-details__h2 Сайт школы онлайн образования
-                    p.portfolio__skills-used HTML, CSS, Javascript
-                    a(href="ya.ru" target="_blank").button-link__text!= '<i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт'
-                .portfolio-arrow-button-wrapper.portfolio-arrow-button-wrapper_right
-                    .arrow-button.arrow-button_accent.arrow-button_direction_right.portfolio-arrow-button_direction_left
+        .portfolio__main.wrapper
+            .portfolio-arrow-button-wrapper
+                .arrow-button.arrow-button_left.portfolio__arrow-button(data-direction="left")
+            .portfolio__slider
+                .portfolio__project.portfolio__project_1#1
+                    .screenshots-wrapper
+                        img.screenshot(src="assets/img/work-2.png" alt="Скриншот с примером работы")
+                    .work-details.work-details_in-row
+                        h2.h2.h2_align_left.work-details__h2 Сайт IT Loft
+                        p.portfolio__skills-used HTML, CSS, Javascript
+                        a(href="ya.ru" target="_blank").button-link__text!= '<i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт'
+            .portfolio-arrow-button-wrapper
+                .arrow-button.arrow-button_right.portfolio__arrow-button(data-direction="right")
+            ul.slider-nav-circles
+                li.slider-nav-circles__circle.slider-nav-circles__circle_active
+                li.slider-nav-circles__circle
+                li.slider-nav-circles__circle
+                li.slider-nav-circles__circle
 
     section.what-about.background-container
         .what-about__wrapper.wrapper

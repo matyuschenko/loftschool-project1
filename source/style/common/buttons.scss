@@ -1,8 +1,9 @@
 .arrow-button {
   background-image: url('../img/arrow_down.svg');
   width: 25px;
-  height: 25px;
+  height: 15px;
   background-repeat: no-repeat;
+  margin: auto;
 
   &:hover {
     cursor: pointer;
@@ -14,18 +15,14 @@
 
 }
 
-.arrow-button_direction_top {
+.arrow-button_top {
   transform: rotate(180deg);
 }
 
-.arrow-button_direction_right {
+.arrow-button_right {
   transform: rotate(270deg);
 }
 
-.arrow-button_direction_bottom {
-
-}
-
-.arrow-button_direction_left {
+.arrow-button_left {
   transform: rotate(90deg);
 }
