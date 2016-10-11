@@ -1,5 +1,4 @@
 .index-wrapper {
-  background: url('../img/desert.jpg');
   min-height: 100%;
   height: auto;
   display: flex;
@@ -7,7 +6,6 @@
   justify-content: space-between;
   align-items: center;
   background-size: cover;
-
 }
 
 .authorize-button {
@@ -19,6 +17,7 @@
   color: white;
   padding: 5px 27.5px;
   border: 1px solid white;
+  z-index: 10;
 
   &:hover {
     background-color: white;
@@ -181,6 +180,7 @@
 .footer-copyright {
   font: 1.6rem/10rem 'robotoregular', 'Arial', sans-serif;
   color: rgba(255, 255, 255, .8);
+  z-index: 10;
 }
 
 .copyright__line {

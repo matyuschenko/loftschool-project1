@@ -21,6 +21,8 @@ mixin avatar-name(big_label, small_label)
 mixin header(watermark_file, big_label, small_label, triangle_color)
     - var svg_triangle = '<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1800 85" preserveaspectratio="none" class="triangle triangle_'+triangle_color+'"><polygon points="0,0   0,86   900.8,86   900.8,75.5"></polygon><polygon points="1800,0   1800,86   900,86   900,75.5"></polygon></svg>';
 
+    .desert-wrapper
+        .desert
     header.header.background-container
         .header__wrapper.wrapper
             .header__first-row
