@@ -1,10 +1,12 @@
 // ФЛИППЕР
 $(window).on('load', function() {
     var flipper = (function () {
+
         var init = function () {
 
+            var flipper = $('.flipper');
+
             $('.authorize-button').on('click', function() {
-                var flipper = $('.flipper');
                 if (flipper.hasClass('state_front')) {
                     flipper.css('transform', 'rotateY(180deg)');
                 } else {
@@ -12,7 +14,6 @@ $(window).on('load', function() {
                 }
                 flipper.toggleClass('state_front')
             });
-
         };
 
         return {init: init};

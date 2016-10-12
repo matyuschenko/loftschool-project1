@@ -1,5 +1,3 @@
-
-
 // VALIDATE AND SEND FORM
 $(window).on('load', function () {
     var validation = (function () {
@@ -9,7 +7,7 @@ $(window).on('load', function () {
             _setupEventListeners = function () {
                 $form = $('form');
                 $form.find('input, textarea').on('focus', function () {
-                    if (['Логин', 'Пароль', 'Имя', 'Почта', 'Ваше сообщение'].indexOf(this.value) != -1) {
+                    if (['Логин', 'Пароль', 'Имя', 'Почта', 'Сообщение'].indexOf(this.value) != -1) {
                         this.value = '';
                     }
                 });
@@ -22,7 +20,7 @@ $(window).on('load', function () {
                 $form.find('input, textarea').each(function () {
                     if (
                         this.value.length === 0 ||
-                        ['Логин', 'Пароль', 'Имя', 'Почта', 'Ваше сообщение'].indexOf(this.value) != -1
+                        ['Логин', 'Пароль', 'Имя', 'Почта', 'Сообщение'].indexOf(this.value) != -1
                     ) {
                         valid = false;
                     }
@@ -45,7 +43,6 @@ $(window).on('load', function () {
                     data,
                     function() { alert('Сообщение отправлено!'); }    // callback function for success
                 );
-                console.log(url, data);
             }
             ;
 

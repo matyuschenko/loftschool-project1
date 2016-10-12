@@ -2,7 +2,7 @@ extends ../page_layout
 
 block content
 
-    +header("portfolio_header", "Максим Матющенко", "Личный сайт веб-разработчика", "default")
+    +header("portfolio_header", "Максим Матющенко", "Веб-разработчик", "default")
 
     section.portfolio.background-container
         .portfolio__header
@@ -10,8 +10,8 @@ block content
                 use(xlink:href='assets/img/works_header.svg#Layer_1')
             h1.h1 Мои работы
         .portfolio__main.wrapper
-            .portfolio-arrow-button-wrapper
-                .arrow-button.arrow-button_left.portfolio__arrow-button(data-direction="left")
+            .portfolio-arrow-button-wrapper(data-direction="left")
+                .arrow-button.arrow-button_left.portfolio__arrow-button
             .portfolio__slider
                 .portfolio__project.portfolio__project_1#1
                     .screenshots-wrapper
@@ -19,9 +19,9 @@ block content
                     .work-details.work-details_in-row
                         h2.h2.h2_align_left.work-details__h2 Сайт IT Loft
                         p.portfolio__skills-used HTML, CSS, Javascript
-                        a(href="ya.ru" target="_blank").button-link__text!= '<i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт'
-            .portfolio-arrow-button-wrapper
-                .arrow-button.arrow-button_right.portfolio__arrow-button(data-direction="right")
+                        a(href="https://ya.ru" target="_blank").button-link__text!= '<i class="fa fa-link" aria-hidden="true"></i> Посмотреть сайт'
+            .portfolio-arrow-button-wrapper(data-direction="right")
+                .arrow-button.arrow-button_right.portfolio__arrow-button
             ul.slider-nav-circles
                 li.slider-nav-circles__circle.slider-nav-circles__circle_active
                 li.slider-nav-circles__circle
@@ -31,9 +31,10 @@ block content
     section.what-about.background-container
         .what-about__wrapper.wrapper
             .about__header
-                svg.watermark-about
+                svg.watermark-about-me
                     use(xlink:href='assets/img/about_header.svg#Layer_1')
-                h1.h1 Что обо мне говорят
+                span.h1-wrapper
+                    h1.h1 Что обо мне говорят
             .reference-wrapper
                 +reference("Этот парень проходил обучение разработке не где-то, а в Loftschool! 2 месяца только самых тяжелых испытаний и бессонных ночей!", "assets/img/kovalchuk.png", "Ковальчук Дмитрий", "основатель Loftschool")
                 +reference("Это код выдержит любые испытания. Только, пожалуйста, не загружайте сайт на слишком старых браузерах!", "assets/img/zakharov.png", "Зар Захаров", "преподаватель")
@@ -41,10 +42,10 @@ block content
     section.contact-me.background-container
         .contact-me__wrapper.wrapper
             form.contact-me-form(action='/')
-                h2.h2.contact-me__h2 Связаться со мной
+                h2.h2.contact-me__h2 Напишите мне
                 input(class="contact-me__input contact-me__input_type_name", value="Имя")
                 input(class="contact-me__input contact-me__input_type_email", value="Почта")
-                textarea(class="contact-me__input contact-me__input_type_message") Ваше сообщение
+                textarea(class="contact-me__input contact-me__input_type_message") Сообщение
                 .contact-me-form__buttons-wrapper
                     input.contact-me-form__button(type="submit" value="Отправить")
                     input.contact-me-form__button(type="reset" value="Очистить")

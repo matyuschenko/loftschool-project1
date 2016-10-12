@@ -44,10 +44,6 @@
   border-radius: 10px 10px 0 0;
 }
 
-.me {
-  //display: none;
-}
-
 .welcome-social-buttons-wrapper {
   margin: 35px 0;
 }
@@ -60,7 +56,6 @@
 
 .welcome-button {
   border: none;
-  //display: inline-block;
   width: 33.33%;
   text-align: center;
   font: 1.6rem/3.6rem 'robotomedium', 'Arial', sans-serif;
@@ -92,6 +87,10 @@
 
 .welcome-button_big {
   width: 50%;
+}
+
+.login {
+  left: 3rem;
 }
 
 .login-wrapper {

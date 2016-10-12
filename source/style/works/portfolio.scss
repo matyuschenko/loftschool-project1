@@ -20,20 +20,32 @@
 
 // BUTTONS
 .portfolio-arrow-button-wrapper {
-  display: inline-block;
-  width: 40px;
+  display: flex;
+  width: 50px;
+  align-items: center;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: rgba(0,0,0, .05);
+  }
 }
 
 
 // SLIDER
 .portfolio__main {
+  width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+}
+
+.portfolio__slider {
+  width: 70%;
 }
 
 .portfolio__project {
+  width: 100%;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
@@ -47,19 +59,23 @@
 // WORKS
 .screenshots-wrapper {
   display: inline-block;
-  width: 40%;
+  //max-width: 288px;
+  //max-height: 372px;
+  width: 30%;
+  //height: 100%;
 
   @include tablets {
-    width: 60%;
+    width: 75%;
   }
 
   @include phones {
-    width: 80%;
+    width: 90%;
   }
 }
 
 .screenshot {
   max-width: 100%;
+  max-height: 100%;
 }
 
 .work-details {
@@ -108,11 +124,11 @@
 // CIRCLES
 .slider-nav-circles {
   position: absolute;
-  bottom: 0;
   display: inline-block;
   width: 150px;
   left: 50%;
-  margin: 0 0 30px -48px;
+  bottom: 30px;
+  transform: translate(-50%,0);
 }
 
 .slider-nav-circles__circle {

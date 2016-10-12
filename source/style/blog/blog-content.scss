@@ -2,17 +2,12 @@
   display: inline-block;
   width: 74%;
   padding-left: 100px;
-  //padding-bottom: $footer-height;
 
   @include tablets {
     width: 100%;
     padding: 0;
-    //padding: 0 0 249px 0;
   }
 
-  @include phones {
-    //padding-bottom: 398px;
-  }
 }
 
 .blog-post__header {

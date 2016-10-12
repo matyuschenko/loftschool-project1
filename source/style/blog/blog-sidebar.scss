@@ -8,7 +8,6 @@
     width: 33.3%;
     position: fixed;
     left: -33.3%;
-    //left: 0;
     top: 0;
     bottom: 0;
     background-color: $accent-color;
@@ -16,15 +15,6 @@
     flex-direction: column;
     justify-content: center;
   }
-}
-
-.blog-navigation {
-  //@include tablets {
-  //  width: 33.3%;
-  //  position: fixed;
-  //  top: 50%;
-  //  transform: translate(0,-50%);
-  //}
 }
 
 .blog-navigation__item {

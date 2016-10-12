@@ -1,5 +1,6 @@
 // PORTFOLIO SLIDER
 $(window).on('load', function () {
+
     var portfolio_data = {
         '0': {
             pic_url: 'assets/img/work-1.png',
@@ -21,7 +22,7 @@ $(window).on('load', function () {
 
     var slider = (function () {
         var init = function () {
-                var buttons = $('.portfolio__arrow-button');
+                var buttons = $('.portfolio-arrow-button-wrapper');
 
                 buttons.on('click', function() {
                     var cur_project = $('.portfolio__project'),

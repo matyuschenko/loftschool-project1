@@ -2,20 +2,23 @@ extends ../page_layout
 
 block content
 
-    +header("portfolio_header", "Максим Матющенко", "Личный сайт веб-разработчика", "default")
+    +header("portfolio_header", "Максим Матющенко", "Веб-разработчик", "default")
 
     section.about-me.background-container
         .about-me__wrapper.wrapper
             .cv
-                h1.h1.cv__h1 Обо мне
+                .cv__h1-wrapper
+                    svg.watermark-about
+                        use(xlink:href='assets/img/about_header.svg#Layer_1')
+                    h1.h1.cv__h1 Обо мне
                 .cv__photo-wrapper
                     img.cv__photo(src="assets/img/matyuschenko.jpg" alt="Фотография Максима Матющенко")
                 h2.h2.cv__h2 Кто я
                 p.cv__text.
-                    Мне 26 лет, я разработчик из Москвы. Занимаюсь исследованиями, анализом и представлением данных. Среди интересов — визуализация данных и интерактивы.
+                    Я пришёл в веб-разработку через визуализацию данных и интерактивную графику. Верстаю публикации исследований, разрабатываю шаблоны графиков, программирую интерактивы.
             .skills
-                h2.h2.cv__h2 Чем я могу быть вам полезен
-                p.skills__description Больше всего меня привлекает frontend-разработка, но я также активно осваиваю backend и готов к работе с ним.
+                h2.h2.cv__h2 Что я могу
+                p.skills__description Я разбираюсь во фронтенде и осваиваю бэкенд, поэтому готов к любым проектам.
                 .skills__charts
                     .skills__row
                         h3.h3.skills__h3 Frontend

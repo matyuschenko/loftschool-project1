@@ -24,7 +24,6 @@
   border: 3px solid transparent;
   border-radius: 50%;
   border-top-color: white;
-  //position: relative;
   animation: spin 1.5s infinite;
 
   &:before, &:after {
@@ -55,4 +54,13 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% {transform: rotate(360deg);}
+}
+
+.preloader__percent {
+  color: white;
+  font-size: 12.5px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
 }
