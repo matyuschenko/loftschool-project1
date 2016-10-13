@@ -40,7 +40,7 @@ $(window).on('load', function() {
                         $('.blog-navigation__item').removeClass('blog-navigation__item_selected');
                         var rel_link = $('a[href*=#' + article_offsets[o] + ']');
                         rel_link.addClass('blog-navigation__item_selected');
-                        return;
+                        break;
                     }
                 }
             });
