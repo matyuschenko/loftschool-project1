@@ -74,7 +74,7 @@ $(window).on('load', function() {
         return {init: init};
     }());
 
-    if (window.location.href.indexOf('about') != -1) {
+    if (document.getElementsByClassName('skills__charts').length) {
         makeSkills.init();
     }
 });

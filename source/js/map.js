@@ -1,28 +1,5 @@
 // КАРТА
 $(window).on('load', function() {
-    var makeMap = (function () {
-        var init = function () {
-
-            (function () {
-                $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ECKASqNjr2kdFY1xJotto6NKcwsZqwI", function () {
-                    window.initMap = function () {
-                        // Create a map object and specify the DOM element for display.
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            center: {lat: 55.751244, lng: 37.618423},
-                            scrollwheel: false,
-                            zoom: 13
-                        })
-                            .setOptions(map_styles);
-                    };
-                    initMap();
-                });
-            })();
-
-        };
-
-        return {init: init};
-    }());
-
     var map_styles = {
         styles: [
             {
@@ -131,9 +108,29 @@ $(window).on('load', function() {
                 ]
             }
         ]
-    };
+    },
+    makeMap = (function () {
+        var init = function () {
 
-    if (window.location.href.indexOf('about') != -1) {
+            $.getScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyD7ECKASqNjr2kdFY1xJotto6NKcwsZqwI", function () {
+                window.initMap = function () {
+                    // Create a map object and specify the DOM element for display.
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 55.751244, lng: 37.618423},
+                        scrollwheel: false,
+                        zoom: 13
+                    })
+                        .setOptions(map_styles);
+                };
+                initMap();
+            });
+
+        };
+
+        return {init: init};
+    }());
+
+    if (document.getElementById('map')) {
         makeMap.init();
     }
 });

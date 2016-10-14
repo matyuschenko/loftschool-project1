@@ -3,7 +3,8 @@ $(window).on('load', function() {
 
     var blog_menu = (function () {
 
-        var init = function () {
+        var tabletWidth = 768,
+            init = function () {
             var blog_nav = $('.blog-navigation'),
                 blog_nav_scroll_pos = blog_nav.offset().top,
                 blog_nav_left_offset = blog_nav.offset().left,
@@ -19,7 +20,7 @@ $(window).on('load', function() {
             $(window).on('scroll', function () {
                 var y_scroll_pos = window.pageYOffset;
                 
-                if ($(window).width() > 768) {
+                if ($(window).width() > tabletWidth) {
                     if (y_scroll_pos > blog_nav_scroll_pos - fixed_nav_top_margin) {
                         blog_nav.css({
                             position: 'fixed',
@@ -45,7 +46,7 @@ $(window).on('load', function() {
                 }
             });
 
-            if ($(window).width() <= 768) {
+            if ($(window).width() <= tabletWidth) {
                 _addSmallMenuBehavior();
             }
 
@@ -83,7 +84,7 @@ $(window).on('load', function() {
         return {init: init};
     }());
 
-    if (window.location.href.indexOf('blog') != -1) {
+    if (document.getElementsByClassName('blog-navigation').length) {
         blog_menu.init();
         $(window).on('resize', blog_menu.init);
     }

@@ -23,5 +23,7 @@ $(window).on('load', function() {
         return {init: init};
     }());
 
-    mainMenu.init();
+    if (document.getElementsByClassName('hamburger').length) {
+        mainMenu.init();
+    }
 });

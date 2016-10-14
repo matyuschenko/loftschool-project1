@@ -52,5 +52,7 @@ $(window).on('load', function () {
         }
     })();
 
-    validation.init();
+    if (document.querySelector('form')) {
+        validation.init();
+    }
 });

@@ -22,7 +22,8 @@ $(window).on('load', function () {
 
     var slider = (function () {
         var init = function () {
-                var buttons = $('.portfolio-arrow-button-wrapper');
+                var buttons = $('.portfolio-arrow-button-wrapper'),
+                    slider_circles = $('.slider-nav-circles__circle');
 
                 buttons.on('click', function() {
                     var cur_project = $('.portfolio__project'),
@@ -38,6 +39,10 @@ $(window).on('load', function () {
                     $('.screenshot').attr('src', portfolio_data[cur_index].pic_url);
                     $('.work-details__h2').text(portfolio_data[cur_index].site_name);
                     cur_project.attr('id', cur_index);
+
+                    slider_circles.removeClass('slider-nav-circles__circle_active');
+                    $(slider_circles[cur_index]).addClass('slider-nav-circles__circle_active');
+
                 })
             }
             ;
@@ -48,7 +53,7 @@ $(window).on('load', function () {
         }
     })();
 
-    if (window.location.href.indexOf('works') != -1) {
+    if (document.getElementsByClassName('portfolio__slider').length) {
         slider.init();
     }
 });

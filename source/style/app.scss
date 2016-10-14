@@ -37,6 +37,16 @@ button {
   padding: 0;
 }
 
+.background-container {
+  width: 100%;
+}
+
+.wrapper {
+  max-width: 1800px;
+  margin: auto;
+
+}
+
 @import 'fonts';
 
 @import 'common/mixins';
@@ -65,13 +75,7 @@ button {
 @import 'blog/blog-sidebar';
 @import 'blog/blog-content';
 
-.background-container {
-  width: 100%;
-}
-
 .wrapper {
-  max-width: 1800px;
-  margin: auto;
 
   @include desktop {
     width: 100%;
