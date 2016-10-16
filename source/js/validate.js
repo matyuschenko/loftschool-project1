@@ -26,23 +26,19 @@ $(window).on('load', function () {
                     }
                 });
                 if (valid) {
-                    _submitForm();
+                    _submitForm($form);
                 } else {
                     alert('Вы заполнили не все поля формы!');
                 }
             },
-            _submitForm = function () {
-                var $form = $(this),
-                    url = 'processForms.php',
-                    data = '';
+            _submitForm = function (form) {
+                var data = {content: ''};
                 $form.find('input, textarea').each(function () {
-                    data += this.value + '\t';   // separator
+                    data.content += this.value + '\t';   // separator
                 });
-                $.post(
-                    url,
-                    data,
-                    function() { alert('Сообщение отправлено!'); }    // callback function for success
-                );
+                $.get('/submitform', data, function(data) {
+                   console.log('clientside success callback: ', data);
+                });
             }
             ;
 
