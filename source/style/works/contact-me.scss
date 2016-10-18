@@ -18,22 +18,38 @@
   }
 }
 
-.contact-me__wrapper {
+.contact-me__wrapper.contact-me__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-}
+  position: relative;
 
-.contact-me-form {
   width: 380px;
-  margin: auto;
-  background-color: rgba(255,255,255,.25);
-  margin-bottom: 45px;
-
   @include phones {
     width: 90%;
   }
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 45px;
+  //background: url('../img/sand.png') center -200px no-repeat;
+  //background-size: 900px auto;
+  //filter: blur(20px);
+}
+
+.contact-me-form {
+  padding-top: 15px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 45px;
+  z-index: 10;
+  background-color: rgba(255,255,255,.25);
 }
 
 .contact-me__h2 {

@@ -10,7 +10,7 @@ var Message = mongoose.model('messages', {
 });
 
 app.get('/submitform', function (req, res) {
-    var message = new Message(JSON.stringify(req.query));
+    var message = new Message({content: JSON.stringify(req.query.content)});
     message.save(function (err) {
         if (err) {
             res.send('error: ', err)

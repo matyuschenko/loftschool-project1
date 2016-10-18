@@ -44,8 +44,7 @@ $(window).on('load', function () {
                     }
                 });
                 data.content.datetime = new Date();
-                console.log(data);
-                $.get('/submitform', data, function(data) {
+                $.get('/submitform', data, function() {
                     alert('Сообщение отправлено!');
                     document.querySelector('form').reset();
                 });
