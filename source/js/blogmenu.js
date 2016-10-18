@@ -9,6 +9,7 @@ $(window).on('load', function() {
                 blog_nav_scroll_pos = blog_nav.offset().top,
                 blog_nav_left_offset = blog_nav.offset().left,
                 blog_nav_w = blog_nav.width(),
+                blog_sidebar = $('.blog-sidebar'),
                 article_offsets = {},
                 fixed_nav_top_margin = 30;
 
@@ -26,13 +27,22 @@ $(window).on('load', function() {
                             position: 'fixed',
                             top: fixed_nav_top_margin,
                             left: blog_nav_left_offset,
-                            width: '25%'
+                            width: blog_nav_w
                         });
                     } else {
                         blog_nav.css({
                             position: 'static',
                             width: 'auto'
                         });
+
+
+                    }
+                } else {
+                    if (y_scroll_pos < $(window).height()) {
+                        console.log('hide!');
+                        blog_sidebar.hide();
+                    } else {
+                        blog_sidebar.show();
                     }
                 }
 
@@ -63,7 +73,7 @@ $(window).on('load', function() {
                     _showSmallMenu();
                 }
             });
-            $('.blog-content').on('click', _hideSmallMenu)
+            $('.blog-content').on('click', _hideSmallMenu);
         },
         _showSmallMenu = function () {
             var blog_sidebar = $('.blog-sidebar');

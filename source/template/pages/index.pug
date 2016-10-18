@@ -26,20 +26,20 @@ block body
                         form#login-form.login-form
                             .login-form-input-wrapper
                                 span.login-form__icon.login-form__icon_type_login
-                                    input.login-form__input.login-form__input_type_login(value="Логин")
+                                    input.login-form__input.login-form__input_type_login(value="Логин" data-name="login")
                             .login-form-input-wrapper
                                 span.login-form__icon.login-form__icon_type_password
-                                    input.login-form__input.login-form__input_type_password(value="Пароль")
+                                    input.login-form__input.login-form__input_type_password(value="Пароль" type="password" data-name="password")
                             div.login-form__checkbox
-                                input.checkbox.login-form__checkbox(type="checkbox" name="robot-checkbox" value="yes")
+                                input.checkbox.login-form__checkbox(type="checkbox" name="robot-checkbox" value="yes" data-name="i-am-human")
                                 span.login-form__checkbox-text Я человек
                             span.login-form__captcha-text Вы точно не робот?
                             div.login-form__radio-buttons
                                 .radio-group
-                                    input(type="radio" name="captcha" value="yes").login-form__radio
+                                    input(type="radio" name="captcha" value="yes" data-name="i-am-not-robot").login-form__radio
                                     span.login-form__radio-label Да
                                 .radio-group
-                                    input(type="radio" name="captcha" value="no").login-form__radio
+                                    input(type="radio" name="captcha" value="no" data-name="i-am-robot").login-form__radio
                                     span.login-form__radio-label Не уверен
                     .welcome-buttons-wrapper
                         input.welcome-button.welcome-button_big(type="submit" value="Войти" form="login-form")

@@ -32,12 +32,22 @@ $(window).on('load', function () {
                 }
             },
             _submitForm = function (form) {
-                var data = {content: ''};
+                var data = {content: {}};
                 $form.find('input, textarea').each(function () {
-                    data.content += this.value + '\t';   // separator
+                    if (this.classList.contains('contact-me-form__button') || this.classList.contains('welcome-button)')) {
+                        return;
+                    }
+                    if (this.type == 'radio' || this.type == 'checkbox') {
+                        data.content[$(this).data('name')] = $(this).is(':checked');
+                    } else {
+                        data.content[$(this).data('name')] = this.value;
+                    }
                 });
+                data.content.datetime = new Date();
+                console.log(data);
                 $.get('/submitform', data, function(data) {
-                   console.log('clientside success callback: ', data);
+                    alert('Сообщение отправлено!');
+                    document.querySelector('form').reset();
                 });
             }
             ;
