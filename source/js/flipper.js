@@ -1,14 +1,18 @@
 // ФЛИППЕР
-$(window).on('load', function() {
+$(window).on('load', function () {
     var flipper = (function () {
 
         var init = function () {
 
             var flipper = $('.flipper');
 
-            $('.authorize-button').on('click', function() {
+            $('.authorize-button').on('click', function () {
                 flipper.toggleClass('flipper_state_back');
             });
+
+            $('.desert-wrapper').on('click', function () {
+                flipper.removeClass('flipper_state_back');
+            })
         };
 
         return {init: init};

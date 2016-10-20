@@ -26,12 +26,12 @@ block body
                         form#login-form.login-form
                             .login-form-input-wrapper
                                 span.login-form__icon.login-form__icon_type_login
-                                    input.login-form__input.login-form__input_type_login(value="Логин" data-name="login")
+                                    input.login-form__input.login-form__input_type_login(placeholder="Логин" data-name="login" required)
                             .login-form-input-wrapper
                                 span.login-form__icon.login-form__icon_type_password
-                                    input.login-form__input.login-form__input_type_password(value="Пароль" type="password" data-name="password")
+                                    input.login-form__input.login-form__input_type_password(placeholder="Пароль" type="password" data-name="password" required)
                             div.login-form__checkbox
-                                input.checkbox.login-form__checkbox(type="checkbox" name="robot-checkbox" value="yes" data-name="i-am-human")
+                                input.checkbox.login-form__checkbox(type="checkbox" name="robot-checkbox" value="yes" data-name="i-am-human" required)
                                 span.login-form__checkbox-text Я человек
                             span.login-form__captcha-text Вы точно не робот?
                             div.login-form__radio-buttons

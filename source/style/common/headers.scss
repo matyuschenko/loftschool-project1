@@ -7,31 +7,31 @@
   margin: auto;
   padding: 65px 0;
 
-  //&:before {
-  //  content: url('../img/Ellipse 3.png');
-  //  position: relative;
-  //  display: inline-block;
-  //  bottom: 12px;
-  //  right: 25px;
-  //
-  //  @include phones {
-  //    display: none;
-  //  }
-  //}
-  //
-  //&:after {
-  //  content: url('../img/Ellipse 3.png');
-  //  display: inline-block;
-  //  vertical-align: middle;
-  //  transform: rotate(180deg);
-  //  position: relative;
-  //  top: 10px;
-  //  left: 25px;
-  //
-  //  @include phones {
-  //    display: none;
-  //  }
-  //}
+  &:before {
+    content: url('../img/Ellipse 3.png');
+    position: relative;
+    display: inline-block;
+    bottom: 12px;
+    right: 25px;
+
+    @include phones {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: url('../img/Ellipse 3.png');
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(180deg);
+    position: relative;
+    top: 10px;
+    left: 25px;
+
+    @include phones {
+      display: none;
+    }
+  }
 
 }
 
@@ -44,31 +44,31 @@
   text-align: center;
   max-width: 500px;
 
-  //&:before {
-  //  content: url('../img/Ellipse 4.png');
-  //  position: relative;
-  //  display: inline-block;
-  //  bottom: 5px;
-  //  right: 5px;
-  //
-  //  @include phones {
-  //    display: none;
-  //  }
-  //}
-  //
-  //&:after {
-  //  content: url('../img/Ellipse 4.png');
-  //  display: inline-block;
-  //  vertical-align: middle;
-  //  transform: rotate(180deg);
-  //  position: relative;
-  //  top: 3px;
-  //  left: 5px;
-  //
-  //  @include phones {
-  //    display: none;
-  //  }
-  //}
+  &:before {
+    content: url('../img/Ellipse 4.png');
+    position: relative;
+    display: inline-block;
+    bottom: 5px;
+    right: 5px;
+
+    @include phones {
+      display: none;
+    }
+  }
+
+  &:after {
+    content: url('../img/Ellipse 4.png');
+    display: inline-block;
+    vertical-align: middle;
+    transform: rotate(180deg);
+    position: relative;
+    top: 3px;
+    left: 5px;
+
+    @include phones {
+      display: none;
+    }
+  }
 
 }
 

@@ -7,29 +7,56 @@ block content
         .blog__wrapper.wrapper
             aside.blog-sidebar
                 nav.blog-navigation
-                    a(href="#2016-09-28").blog-navigation__item.blog-navigation__item_selected Самое важное в SASS
-                    a(href="#2016-09-14").blog-navigation__item Приёмы в вёрстке, без которых не обходится ни один сайт
-                    a(href="#2016-09-01").blog-navigation__item Самый необходимый набор gulp-плагинов
-                    a(href="#2016-08-29").blog-navigation__item Почему я выбрал pug
+                    a(href="#2016-09-28").blog-navigation__item.blog-navigation__item_selected Как избежать фишинга в интернете
+                    a(href="#2016-09-14").blog-navigation__item Как понять, что вам звонит мошенник
+                    a(href="#2016-09-01").blog-navigation__item Как не потерять деньги через смартфоны
+                    a(href="#2016-08-29").blog-navigation__item Как распознать мошенников на Авито
                 .small-screen-button
             section.blog-content
                 article.blog-post#2016-09-28
-                    h2.blog-post__header Самое важное в SASS
+                    h2.blog-post__header Как избежать фишинга в интернете
                     time.blog-post__date 28 сентября 2016
-                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
-                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+                    ul.blog-post__bullets
+                        li.blog-post__paragraph.blog-post__bullet-item Не ходите по ссылкам, если не уверены в их надежности. Убедитесь, что отправитель — именно тот, за кого себя выдает.
+                        li.blog-post__paragraph.blog-post__bullet-item Избегайте подозрительных сайтов, тем более ничего там не скачивайте.
+                        li.blog-post__paragraph.blog-post__bullet-item Не сообщайте никому номер и срок действия карты, а также пароли из СМС. Сотрудник банка никогда это не спросит.
+                        li.blog-post__paragraph.blog-post__bullet-item Критически подходите ко всем предложениям и объявлениям, которые встречаете в интернете. Не ведитесь на обещания халявы.
+                        li.blog-post__paragraph.blog-post__bullet-item Если пришло тревожное письмо «из банка», не спешите выполнять инструкции. Позвоните в банк — но только по телефону, написанному на карте.
+                    p.blog-post__paragraph
+                        a(target="_blank" href="http://journal.tinkoff.ru/heroes/").blog-post__link Читать статью
                 article.blog-post#2016-09-14
-                    h2.blog-post__header Приёмы в вёрстке, без которых не обходится ни один сайт
+                    h2.blog-post__header Как понять, что вам звонит мошенник
                     time.blog-post__date 14 сентября 2016
-                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
-                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+                    ul.blog-post__bullets
+                        li.blog-post__paragraph.blog-post__bullet-item Если не уверены в собеседнике, попросите его назвать номер карты или остаток на счете.
+                        li.blog-post__paragraph.blog-post__bullet-item Не паникуйте, если вам пишут о блокировке счета. Позвоните в банк по номеру на сайте или на карте.
+                        li.blog-post__paragraph.blog-post__bullet-item Не ведитесь на обещания легких денег или выгоды без усилий.
+                        li.blog-post__paragraph.blog-post__bullet-item Если собеседник торопит вас или спрашивает код из СМС, вы говорите с мошенником.
+                        li.blog-post__paragraph.blog-post__bullet-item Внимательно читайте сообщения из банка. Мошенники используют имена отправителей, похожие на названия банков, и допускают ошибки в тексте.
+                        li.blog-post__paragraph.blog-post__bullet-item Не пытайтесь перехитрить других или купить что-то в несколько раз дешевле — эти мотивы ведут в руки мошенников.
+                    p.blog-post__paragraph
+                        a(target="_blank" href="http://journal.tinkoff.ru/scams/").blog-post__link Читать статью
                 article.blog-post#2016-09-01
-                    h2.blog-post__header Самый необходимый набор gulp-плагинов
+                    h2.blog-post__header Как не потерять деньги через смартфоны
                     time.blog-post__date 1 сентября 2016
-                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
-                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+                    ul.blog-post__bullets
+                        li.blog-post__paragraph.blog-post__bullet-item Семь раз подумай, один раз нажми. Сомнительные ссылки — самый быстрый способ поймать вирус.
+                        li.blog-post__paragraph.blog-post__bullet-item Не ищите халяву и избегайте подозрительных сайтов. Вирусописатели распространяют зловредные программы через страницы, на которых обещают бесплатный контент.
+                        li.blog-post__paragraph.blog-post__bullet-item Не запускайте файлы, если не до конца в них уверены. Особенно это касается тех, что сами скачались на телефон.
+                        li.blog-post__paragraph.blog-post__bullet-item Смотрите, куда приложения просят доступ при установке: фонарику не нужно уметь читать и отправлять СМС.
+                        li.blog-post__paragraph.blog-post__bullet-item Обновляйте операционную систему. Назойливые исправления безопасности приходят не просто так: хакеры находят в ОС уязвимости, которые нужно устранять.
+                        li.blog-post__paragraph.blog-post__bullet-item Установите надежный антивирус.
+                    p.blog-post__paragraph
+                        a(target="_blank" href="http://journal.tinkoff.ru/smartphonesecurity/").blog-post__link Читать статью
                 article.blog-post#2016-08-29
-                    h2.blog-post__header Почему я выбрал pug
+                    h2.blog-post__header Как распознать мошенников на Авито
                     time.blog-post__date 29 августа 2016
-                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
-                    p.blog-post__paragraph Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet interdum eros, nec congue lorem tempor sed. Duis non dolor vitae nisl semper iaculis suscipit non ligula. Duis scelerisque, libero auctor fermentum congue, lorem velit viverra elit, a pellentesque est velit vitae augue. Ut pretium porttitor leo, sed convallis massa ultricies ac. Nunc ut dictum elit. Quisque sed metus quis turpis sodales sollicitudin. Pellentesque ullamcorper turpis ac tellus scelerisque vestibulum. Nulla facilisi. Aliquam id facilisis nisi. Vestibulum ornare, quam eu consectetur volutpat, tellus eros imperdiet lectus, in pellentesque libero lectus ornare arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+                    ul.blog-post__bullets
+                        li.blog-post__paragraph.blog-post__bullet-item Не соглашайтесь на предоплату.
+                        li.blog-post__paragraph.blog-post__bullet-item Не давайте никому данные карты и не сообщайте коды из смс.
+                        li.blog-post__paragraph.blog-post__bullet-item Не переходите по ссылкам и не открывайте файлы, которые прислали незнакомцы.
+                        li.blog-post__paragraph.blog-post__bullet-item Не вводите логин и пароль от «Авито» на других сайтах.
+                        li.blog-post__paragraph.blog-post__bullet-item Не верьте в сказочные предложения: если за товар просят в десять раз меньше, чем он стоит в магазине, это обман.
+                        li.blog-post__paragraph.blog-post__bullet-item Если заподозрили обман, жмите на кнопку «Пожаловаться».
+                    p.blog-post__paragraph
+                        a(target="_blank" href="http://journal.tinkoff.ru/avito-fraud/").blog-post__link Читать статью

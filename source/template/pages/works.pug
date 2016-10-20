@@ -44,9 +44,9 @@ block content
             .blur
             form.contact-me-form(action='/')
                 h2.h2.contact-me__h2 Напишите мне
-                input(class="contact-me__input contact-me__input_type_name", value="Имя" data-name="name")
-                input(class="contact-me__input contact-me__input_type_email", value="Почта" data-name="mail")
-                textarea(class="contact-me__input contact-me__input_type_message" data-name="message") Сообщение
+                input(class="contact-me__input contact-me__input_type_name", placeholder="Имя" data-name="name" required)
+                input(class="contact-me__input contact-me__input_type_email", placeholder="Почта" data-name="mail" required)
+                textarea(class="contact-me__input contact-me__input_type_message" placeholder="Сообщение" data-name="message" required)
                 .contact-me-form__buttons-wrapper
                     input.contact-me-form__button(type="submit" value="Отправить")
                     input.contact-me-form__button(type="reset" value="Очистить")

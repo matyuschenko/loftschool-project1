@@ -41,3 +41,21 @@
     font-size: 1.4rem;
   }
 }
+
+.blog-post__bullets.blog-post__bullets {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.blog-post__bullet-item {
+  list-style-type: disc;
+}
+
+.blog-post__link {
+  color: $links-color;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
